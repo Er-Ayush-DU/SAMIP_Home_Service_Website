@@ -1,9 +1,8 @@
-import React from "react"
-function App(){
-  return
-        <React.Fragment>
-
-        </React.Fragment>
+function App() {
+  return (
+    
+    <h1>Hello</h1> 
+  )
 }
 
 export default App;
