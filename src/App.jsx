@@ -1,8 +1,15 @@
-
-
+import Goals from "./components/Goals";
+import Total from "./components/Total";
+import Testimonial from "./components/Testimonial";
 
 function App() {
-  return (<h1>Ram</h1>)
+  return (
+    <>
+      <Goals></Goals>
+      <Total></Total>
+      <Testimonial></Testimonial>
+    </>
+  )
 
 }
 

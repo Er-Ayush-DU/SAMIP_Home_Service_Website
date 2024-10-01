@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Wix+Madefor+Display:wght@400..800&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 
 @tailwind utilities;
 
-@tailwind utilities;
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,4 +23,45 @@ html {
   scroll-behavior: smooth;
 }
 
+
+.text-style {
+  font-family: "Inter", sans-serif;
+  /* Goals.jsx */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* Goals.jsx */
+  font-family: "Inknut Antiqua", serif;
+  ;
+}
+
+
+
+.box1 {
+  background-color: #D9D9D9;
+  text-align: center;
+  font-size: 25px;
+  /* Goals.jsx */
+  padding-top: 17px;
+  overflow: hidden;
+}
+
+.box2 {
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 25px;
+  /* Goals.jsx */
+  padding-top: 17px;
+  overflow: hidden;
+}
+
+.inner-font {
+  font-family: "Inter", sans-serif;
+  /* Goals.jsx */
+}
+
+/* Testimonial.jsx */
 
