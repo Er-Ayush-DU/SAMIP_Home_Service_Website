@@ -1,10 +1,5 @@
-import React from "react"
 function App() {
-  return (
-    <React.Fragment>
-      <h1>Hello  samip</h1>
-    </React.Fragment>
-  )
+  return <h1>Ram</h1>
 }
 
 export default App;
