@@ -13,7 +13,7 @@
 
 
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,44 +26,42 @@ html {
 }
 
 
-.topHead {
+.topHead{
   /* border:4px solid black ; */
   /* box-shadow: 3px 10px 15px rgb(158, 157, 157); */
   z-index: 999;
   border-bottom: 1px solid rgb(233, 227, 227);
-
+  
 }
 
-.navItems .navItem {
+.navItems .navItem{
   font-weight: 600;
-
+  
 }
 
 
-.navItem:hover {
+.navItem:hover{
   color: #2F2BF6;
-
-
+ 
+  
 }
-
-.sign_up_button:hover {
+.sign_up_button:hover{
   background-color: #fff;
   transition: 0.7s;
   border: 1px solid #2F2BF6;
 }
 
-.sign_up_button {
+.sign_up_button{
   border: 1px solid #2F2BF6;
   color: #fff;
   font-weight: 600;
 }
-
-.sign_up_button:hover {
+.sign_up_button:hover{
   color: #2F2BF6;
-  font-weight: 600;
+  font-weight:600;
 }
 
-.navbar {
+.navbar{
   width: 100vw;
   position: sticky;
   top: 0;
@@ -123,17 +121,17 @@ html {
 
 
 
-::-webkit-scrollbar {
-  width: 7px;
+::-webkit-scrollbar{
+    width: 7px;
 }
 
 
-::-webkit-scrollbar-track {
-  background-color: #d1e5ff;
+::-webkit-scrollbar-track{
+    background-color:#d1e5ff;
 }
 
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(#8d89a3, #6c6799);
-  border-radius: 20px;
-  height: 20px;
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(#8d89a3,#6c6799);
+    border-radius: 20px;
+    height: 20px;
 }
