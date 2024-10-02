@@ -6,7 +6,7 @@ const Total = () => {
       <div
         className='w-screen h-[300px] relative bg-cover bg-center'
         style={{
-          backgroundImage: "url('/images/back.jpg')",
+          backgroundImage: "url('/images/soc.jpg')",
         }}
       >
 
