@@ -22,14 +22,14 @@ const FAQ = () => {
       question: 'Is your cleaning service guaranteed?',
       answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi itaque autem aspernatur corrupti ea veniam aperiam, ducimus est odio rem reprehenderit fugiat amet eaque dolores, magnam unde maxime blanditiis! Tenetur?',
     },
-    {
-      question: 'Do I tip the housecleaners?',
-      answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi itaque autem aspernatur corrupti ea veniam aperiam, ducimus est odio rem reprehenderit fugiat amet eaque dolores, magnam unde maxime blanditiis! Tenetur?',
-    },
-    {
-      question: 'What are your rates for house cleaning services?',
-      answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi itaque autem aspernatur corrupti ea veniam aperiam, ducimus est odio rem reprehenderit fugiat amet eaque dolores, magnam unde maxime blanditiis! Tenetur?',
-    },
+    // {
+    //   question: 'Do I tip the housecleaners?',
+    //   answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi itaque autem aspernatur corrupti ea veniam aperiam, ducimus est odio rem reprehenderit fugiat amet eaque dolores, magnam unde maxime blanditiis! Tenetur?',
+    // },
+    // {
+    //   question: 'What are your rates for house cleaning services?',
+    //   answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi itaque autem aspernatur corrupti ea veniam aperiam, ducimus est odio rem reprehenderit fugiat amet eaque dolores, magnam unde maxime blanditiis! Tenetur?',
+    // },
   ]);
 
   const [activeIndex, setActiveIndex] = useState(null);
@@ -40,50 +40,56 @@ const FAQ = () => {
 
   return (
     <>
-      <div className='text-center mb-[30px] mt-[40px] text-[2rem] text-lg uppercase font-bold text-[#7F24C6] overflow-hidden'>
-        <h1 className='overflow-hidden'>Frequently Asked Questions ?</h1>
+      <div className='text-center mb-[30px] mt-[40px] text-[2rem] font-bold'>
+        <h1 className='text-[24px] text-[#7F24C6]'>Frequently Asked Questions</h1>
       </div>
-      <div>
+
+      <div className="max-w-[800px] mx-auto mb-5">
         <style>
           {`
           .faq {
-            margin-bottom: 20px;
-            margin-left: 150px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            overflow: hidden;
           }
 
           .faq-question {
-            
-            font-size:16px;
+            font-size: 15px;
             cursor: pointer;
-            font-weight:600;
+            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-          }
-
-          .faq-icon {
-            font-size: 18px;
-            margin-left: 10px;
-            margin-right: 150px;
-            transition: transform 0.3s ease-in-out;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            font-weight:600;
           }
 
           .faq-answer {
-            font-family:Poppins;
-            width: 80vw;
-            margin-top: 10px;
             padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
             background-color: #f9f9f9;
+            border-top: 1px solid #ddd;
+            font-size: 16px;
+            color: #555;
           }
-        `}
+
+          .faq-icon {
+            transition: transform 0.3s ease-in-out;
+          }
+
+          .faq-icon-open {
+            transform: rotate(45deg);
+          }
+          `}
         </style>
         {faqs.map((faq, index) => (
           <div key={index} className="faq">
             <div className="faq-question" onClick={() => handleToggle(index)}>
               <span>{faq.question}</span>
-              <span className="faq-icon">
+              <span className={`faq-icon ${activeIndex === index ? 'faq-icon-open' : ''}`}>
                 {activeIndex === index ? '-' : '+'}
               </span>
             </div>

@@ -60,13 +60,14 @@ function Feature() {
                 alignItems: 'center',
                 marginLeft: '15px',
                 textAlign: 'center',
-                backgroundColor: hoverIndex === index || index === 1 ? '#6A9CE8' : 'transparent', // Hover effect and default blue for 2nd box
+                backgroundColor: hoverIndex === index 
+                  ? '#6A9CE8' 
+                  : (hoverIndex === null && index === 1) 
+                    ? '#6A9CE8' 
+                    : 'transparent', // Default blue only if not hovering any other box
                 transition: 'background-color 0.3s', // Smooth transition
 
-              }
-
-
-              }
+              }}
             >
               <h1 style={{ fontWeight: '650', marginBottom: '10px', fontSize: '20px' }}>{item.title}</h1>
               <p>{item.text}</p>
@@ -83,14 +84,10 @@ function Feature() {
             e.currentTarget.style.backgroundColor = 'white',
               e.currentTarget.style.color = 'blue';
             e.currentTarget.style.border = '1px solid blue';
-
           }}
-
-
           onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = '#2F2BF6'
+            e.currentTarget.style.backgroundColor = '#2F2BF6';
             e.currentTarget.style.color = 'white';
-
           }}
         >
           See More...

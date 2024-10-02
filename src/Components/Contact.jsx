@@ -2,7 +2,7 @@ import React from "react";
 
 function Contact(){
     return<React.Fragment>
-        <div className="mt-24 h-[30rem] flex mb-16">
+        <div className="mt-24 h-[30rem] flex ">
             <div className="w-[50vw]">
                 <img className="object-cover w-[50vw] h-[30rem]" src="src/assets/Images/contact_.avif" alt="" />
             </div>
@@ -55,7 +55,7 @@ function Contact(){
                 <div className="text-center">
                     <button
                     type="submit"
-                    className="bg-[#0a0c6a] text-white font-semibold py-4 px-8 rounded-lg w-full md:w-auto"
+                    className="bg-[#2F2BF6] text-white font-semibold py-2 px-5 rounded-lg w-full md:w-auto"
                     >
                     Send Message
                     </button>

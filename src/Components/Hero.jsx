@@ -10,7 +10,7 @@ function Hero(){
                     </div>
                 </div>
                 <div className="absolute top-[6.7rem] left-14">
-                  <div className="text-[#2F2BF6] text-[56px] font-[700] select-none">
+                  <div className="text-[#7F24C6] text-[56px] font-[700] select-none">
                   <div className="  ">Connecting Helpers,</div>
                   <div className=" relative left-5">Protecting Homes</div>
                   </div>
