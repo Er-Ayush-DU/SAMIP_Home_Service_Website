@@ -34,6 +34,7 @@ function Footer() {
                         <a href="#" className="hover:underline">@M-Cell</a>
                         <a href="#" className="hover:underline">@Manacle</a>
                         <a href="#" className="hover:underline">@Lok Utthan</a>
+                        
                     </div>
 
                     {/* Google Maps Iframe Section */}
