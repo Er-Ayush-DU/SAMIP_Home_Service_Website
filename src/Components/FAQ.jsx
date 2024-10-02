@@ -40,8 +40,8 @@ const FAQ = () => {
 
   return (
     <>
-      <div className='text-center mb-[30px] mt-[40px] text-[26px] text-lg uppercase font-bold'>
-        <h1>Frequently Asked Questions</h1>
+      <div className='text-center mb-[30px] mt-[40px] text-[2rem] text-lg uppercase font-bold text-[#7F24C6] overflow-hidden'>
+        <h1 className='overflow-hidden'>Frequently Asked Questions ?</h1>
       </div>
       <div>
         <style>
@@ -52,10 +52,10 @@ const FAQ = () => {
           }
 
           .faq-question {
-            font-family:Arial;
+            
             font-size:16px;
             cursor: pointer;
-            font-weight:700;
+            font-weight:600;
             display: flex;
             justify-content: space-between;
             align-items: center;
