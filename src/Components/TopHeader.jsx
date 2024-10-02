@@ -26,17 +26,21 @@ function TopHeader() {
     return (
         <React.Fragment>
             <div className="topHead mb-2">
+                {/* Placeholder to prevent content from jumping */}
+                {isFixed && <div style={{ height: '4.4rem' }}></div>}
+                
+                {/* Header with fixed position on scroll */}
                 <div id="affixElement" className={`flex w-[100vw] justify-between bg-[#fff] h-[4.4rem] items-center ${isFixed ? 'fixed top-0 z-50' : ''}`}>
                     <div className="h-16 flex items-center pl-[1.99rem]">
                         <img className="h-16" src="src/assets/Images/samip-logo2.png" alt="Logo" />
                     </div>
                     <div className="flex justify-around items-center gap-20">
-                        <div className="flex align-center gap-11 navItems">
-                            <a className="navItem" href="#">HOME</a>
-                            <a className="navItem" href="#">ABOUT US</a>
-                            <a className="navItem" href="#">FEATURES</a>
-                            <a className="navItem" href="#">TESTIMONIALS</a>
-                            <a className="navItem" href="#">CONTACT US</a>
+                        <div className="flex align-center gap-11 navItems ">
+                            <a className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6]  after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full" href="#">HOME</a>
+                            <a className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full" href="#">ABOUT US</a>
+                            <a className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full" href="#">FEATURES</a>
+                            <a className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full" href="#">TESTIMONIALS</a>
+                            <a className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full" href="#">CONTACT US</a>
                         </div>
                         <div className="pr-12">
                             <div className="bg-[#2F2BF6] p-[0.3rem] pl-[0.9rem] pr-[0.9rem] rounded-2xl sign_up_button">

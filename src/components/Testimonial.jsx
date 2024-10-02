@@ -43,7 +43,7 @@ const Testimonial = () => {
 
   return (
     <div className="bg-[#f2f2f2] h-[850px] w-screen flex flex-col gap-16 overflow-hidden">
-      <h2 className="text-center font-semibold text-5xl mt-[105px]">Testimonials</h2>
+      <h2 className="text-center font-semibold text-5xl mt-[80px] text-indigo-800">Testimonials</h2>
 
       <div className="relative flex justify-center items-center overflow-hidden">
         <button
