@@ -67,7 +67,7 @@ const Testimonial = () => {
             >
               <div className="h-[200px] w-[200px] bg-white rounded-full flex justify-center items-center relative border-2 border-blue-500 border-dashed">
                 <div className="h-[182px] w-[182px] bg-[#FAE084] rounded-full overflow-hidden">
-                  <img src={card.photo} alt="" className='object-cover'/>
+                  <img src={card.photo} alt="" className='object-cover' />
                 </div>
               </div>
               <div className="mt-4 text-center text-2xl font-bold text-indigo-800">{card.title}</div>
