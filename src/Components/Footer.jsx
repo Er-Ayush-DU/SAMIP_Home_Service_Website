@@ -52,9 +52,9 @@ function Footer() {
                     {/* Quick Links */}
                     <div className="flex flex-col justify-center">
                         <div className="font-bold mb-2 ">Quick Links</div>
-                        <a href="https://msell.in/" className="hover:underline">@M-Cell</a>
-                        <a href="https://manacleindia.com/" className="hover:underline">@Manacle</a>
-                        <a href="https://lokutthanfoundation.in/" className="hover:underline">@Lok Utthan pahel</a>
+                        <a href="https://lokutthanfoundation.in/" className="hover:underline">@Lok Utthan Pehal</a>
+                        <a href="https://manacleindia.com/" className="hover:underline">@Manacle Technologies</a>
+                        <a href="https://msell.in/" className="hover:underline">@mSELL</a>
                     </div>
 
                     {/* Google Maps Iframe Section */}
