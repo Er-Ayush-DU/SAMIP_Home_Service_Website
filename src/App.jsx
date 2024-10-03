@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import TopHeader from "./Components/TopHeader";
+import TopHeader from "./components/TopHeader";
 import Hero from "./Components/Hero";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import AboutUs from "./components/AboutUs";
+import AboutPage from "./components/AboutPage";
 import Goals from "./Components/Goals";
 import Total from "./Components/Total";
 import Feature from "./Components/Feature";
@@ -64,6 +65,7 @@ function App() {
                   </>
                 }
               />
+              <Route path="/about" element={<AboutPage />} />
             </Routes>
           </main>
 
