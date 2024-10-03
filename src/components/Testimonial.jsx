@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
 const cardsData = [
-  { id: 1, title: 'Prashant Kumar Chaurasiya', profile: 'Web Developer', contribution: 'Frontend Development', mobile: '123-456-7890', photo: 'images/pk.jpg', description: 'Experienced web developer specializing in frontend technologies like React, Vue, and Angular. Proficient in JavaScript, HTML, CSS.' },
-  { id: 2, title: 'Krishna Singha', profile: 'Graphic Designer', contribution: 'Visual Design', mobile: '987-654-3210', photo: 'images/krishna.jpg', description: 'Creative graphic designer with a passion for visual storytelling. Skilled in Adobe Photoshop, Illustrator, and InDesign.' },
-  { id: 3, title: 'Ayush Tiwari', profile: 'Data Analyst', contribution: 'Data Analysis', mobile: '456-789-0123', photo: 'images/ayush.jpg', description: 'Data analyst with expertise in statistical analysis, data visualization, and Python programming. Loves turning data into actionable insights.' },
-  { id: 4, title: 'Kamlesh Kumar Raghuvanshi', profile: 'Content Writer', contribution: 'SEO Content', mobile: '321-654-9870', photo: 'images/kamlesh.jpg', description: 'Proficient content writer with years of experience in SEO writing, blog content, and copywriting. Passionate about crafting engaging stories.' },
-  { id: 5, title: 'Vanshika Kansal', profile: 'Digital Marketer', contribution: 'SEO & Social Media', mobile: '654-321-0987', photo: 'images/vanshi.jpg', description: 'Digital marketer with experience in SEO, SEM, and social media management. Focused on increasing brand visibility and engagement.' },
+  { id: 1, title: 'Bhoopendra N Pandey', profile: 'Communicator & Excellent Managerial Person', contribution: 'Frontend Development', mobile: '123-456-7890', photo: 'images/bhupendra.jpg', description: 'Experienced web developer specializing in frontend technologies like React, Vue, and Angular. Proficient in JavaScript, HTML, CSS.' },
+  { id: 2, title: 'Shri Kamlesh Raghuvanshi', profile: 'National President(Lok Utthan Pehal Foundation)', contribution: 'Visual Design', mobile: '987-654-3210', photo: 'images/kamlesh.jpg', description: 'Creative graphic designer with a passion for visual storytelling. Skilled in Adobe Photoshop, Illustrator, and InDesign.' },
+  { id: 3, title: 'Preeti Raghuvanshi', profile: 'Communicator & Excellent Managerial Person', contribution: 'Data Analysis', mobile: '456-789-0123', photo: 'images/preeti.jpg', description: 'Data analyst with expertise in statistical analysis, data visualization, and Python programming. Loves turning data into actionable insights.' },
+  { id: 4, title: 'Dr. Rishi M Bhatnagar', profile: 'Entrepreneur & Technology expert', contribution: 'SEO Content', mobile: '321-654-9870', photo: 'images/Rishi.jpg', description: 'Proficient content writer with years of experience in SEO writing, blog content, and copywriting. Passionate about crafting engaging stories.' },
+  { id: 5, title: 'Prashant Kumar', profile: 'Digital Marketer', contribution: 'SEO & Social Media', mobile: '654-321-0987', photo: 'images/pk.jpg', description: 'Digital marketer with experience in SEO, SEM, and social media management. Focused on increasing brand visibility and engagement.' },
 ];
 
 const Testimonial = () => {
@@ -67,11 +67,11 @@ const Testimonial = () => {
             >
               <div className="h-[200px] w-[200px] bg-white rounded-full flex justify-center items-center relative border-2 border-blue-500 border-dashed">
                 <div className="h-[182px] w-[182px] bg-[#FAE084] rounded-full overflow-hidden">
-                  <img src={card.photo} alt="" className='object-cover'/>
+                  <img src={card.photo} alt="" className='object-cover' />
                 </div>
               </div>
-              <div className="mt-4 text-center text-2xl font-bold">{card.title}</div>
-              <div className="text-justify px-5">{card.profile}</div>
+              <div className="mt-4 text-center text-2xl font-bold text-indigo-800">{card.title}</div>
+              <div className="text-justify px-5 font-[500]">{card.profile}</div>
               <div className="text-justify px-5">{card.description}</div>
             </div>
           ))}

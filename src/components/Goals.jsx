@@ -1,33 +1,90 @@
+import { MdArrowCircleRight } from 'react-icons/md'; // Importing the arrow-circle-right icon from Material Design Icons
+
 const Goals = () => {
   return (
     <>
       <div className="w-screen mb-10">
-
         <div className="text-style mt-20 text-center h-[80px] text-3xl font-bold text-[#7F24C6]">
           <div>Simplify Your Society Life with Trusted</div>
           <div>Security and Reliable Services</div>
         </div>
 
-        <div className="flex justify-around items-center px-14 mt-7">
+        <div className="flex justify-around px-14 mt-7">
           <div className="container h-[905px] bg-pink-400">
-            <div className="box1"></div>
-            <div className="box2">
-              <div className="overflow-hidden flex items-center justify-center text-indigo-800  ">Our Goals</div>
-              <div className="inner-font pt-6 text-justify px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quidem laudantium a iste odit. Eligendi sed tenetur molestias. Natus ipsa vitae dicta unde obcaecati laborum itaque explicabo debitis, inventore nam.
-                Iure dolorum ducimus id excepturi.</div>
+            <div className="box1 relative">
+              <img src="images/goals.jpg" alt="" className='absolute top-0 left-0 object-cover object-center w-full h-full' />
             </div>
             <div className="box2">
-              <div className="overflow-hidden flex items-center justify-center text-indigo-800">Our Mission</div>
-              <div className="inner-font pt-6 text-justify px-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus eos laudantium quae laborum consequatur placeat aliquam distinctio, officia nulla eum? Pariatur quae quibusdam sit nihil maiores ut illum tenetur dignissimos.</div>
+              <div className="overflow-hidden flex items-center justify-center text-indigo-800"><u className='overflow-hidden'>Our Goals</u></div>
+              <div className="inner-font pt-6 text-justify px-5 text-[1rem] font-medium">
+                <ol className="space-y-6"> {/* Added space between list items */}
+                  <li className="flex items-center">
+                    <MdArrowCircleRight className="text-purple-500" style={{ width: '24px', height: '24px', minWidth: '24px' }} /> {/* Consistent icon size */}
+                    <span className="ml-3">Our mission starts with societies, where daily visitors like maids, and occasional ones like courier staff, enter
+                      the premises to meet residents' needs.</span>
+                  </li>
+                  <li className="flex items-center">
+                    <MdArrowCircleRight className="text-purple-500" style={{ width: '24px', height: '24px', minWidth: '24px' }} />
+                    <span className="ml-3">RWA (Society Management) handles many tasks to benefit residents, but the real challenge isn't funds—it's
+                      ensuring transparency and relevance.
+                    </span>
+                  </li>
+                  <li className="flex items-center">
+                    <MdArrowCircleRight className="text-purple-500" style={{ width: '24px', height: '24px', minWidth: '24px' }} />
+                    <span className="ml-3">Apart from providing services to residents, their prime and utmost concern is security.</span>
+                  </li>
+                  <li className="flex items-center">
+                    <MdArrowCircleRight className="text-purple-500" style={{ width: '24px', height: '24px', minWidth: '24px' }} />
+                    <span className="ml-3">Residents need an easy, single platform to access information, report queries and complaints, and ensure
+                      financial transparency.</span>
+                  </li>
+                  <li className="flex items-center">
+                    <MdArrowCircleRight className="text-purple-500" style={{ width: '24px', height: '24px', minWidth: '24px' }} />
+                    <span className="ml-3">On the other hand, workers need to be technically trained which is one of SAMIP tasks .</span>
+                  </li>
+
+                </ol>
+              </div>
             </div>
-            <div className="box1"></div>
+            <div className="box2">
+              <div className="overflow-hidden flex items-center justify-center text-indigo-800"><u className='overflow-hidden'>Our Mission</u></div>
+              <div className="inner-font pt-6 text-justify px-5 text-[1rem] font-medium">
+                <ol className="space-y-6"> {/* Added space between list items */}
+                  <li className="flex items-center">
+                    <MdArrowCircleRight className="text-purple-500" style={{ width: '24px', height: '24px', minWidth: '24px' }} /> {/* Consistent icon size */}
+                    <span className="ml-3">In today's software-driven era, finding information is easy, but there's still a gap when it comes to accessing details about people vital to our daily lives.</span>
+                  </li>
+                  <li className="flex items-center">
+                    <MdArrowCircleRight className="text-purple-500" style={{ width: '24px', height: '24px', minWidth: '24px' }} />
+                    <span className="ml-3">Yes, we're referring to the human resources that handle our daily tasks, such as maids, sanitation workers, drivers, guards, and rickshaw pullers.</span>
+                  </li>
+                  <li className="flex items-center">
+                    <MdArrowCircleRight className="text-purple-500" style={{ width: '24px', height: '24px', minWidth: '24px' }} />
+                    <span className="ml-3">SAMIP is our initiative to bridge this gap, with security at its core.</span>
+                  </li>
+                  <li className="flex items-center">
+                    <MdArrowCircleRight className="text-purple-500" style={{ width: '24px', height: '24px', minWidth: '24px' }} />
+                    <span className="ml-3">SAMIP’s mission is to build verified worker portfolios, conduct police checks, and help upgrade their skills, especially in communication.</span>
+                  </li>
+                  <li className="flex items-center">
+                    <MdArrowCircleRight className="text-purple-500" style={{ width: '24px', height: '24px', minWidth: '24px' }} />
+                    <span className="ml-3">Next mission is to provide them jobs as per their expertise or skills.</span>
+                  </li>
+                  <li className="flex items-center">
+                    <MdArrowCircleRight className="text-purple-500" style={{ width: '24px', height: '24px', minWidth: '24px' }} />
+                    <span className="ml-3">Overall mission is to create a secure, hassle-free environment in our city.</span>
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div className="box1 relative">
+              <img src="images/mission.jpg" alt="" className='absolute top-0 left-0 object-cover object-center w-full h-full' />
+            </div>
           </div>
         </div>
       </div>
-
-
     </>
-  )
-}
+  );
+};
 
 export default Goals;
