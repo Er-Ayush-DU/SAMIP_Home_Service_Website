@@ -51,7 +51,11 @@ function TopHeader() {
                                 className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6]  after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full cursor-pointer"
                             >
                                 ABOUT US
+
+                                
+                               
                             </Link>
+                            
 
                             {/* Features link with smooth scroll */}
                             <ScrollLink
