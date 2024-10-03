@@ -68,12 +68,9 @@ const Goals = () => {
                   </li>
                   <li className="flex items-center">
                     <MdArrowCircleRight className="text-purple-500" style={{ width: '24px', height: '24px', minWidth: '24px' }} />
-                    <span className="ml-3">Next mission is to provide them jobs as per their expertise or skills.</span>
+                    <span className="ml-3">Provide jobs as per expertise and to create a secure, and hassle-free environment in the city.</span>
                   </li>
-                  <li className="flex items-center">
-                    <MdArrowCircleRight className="text-purple-500" style={{ width: '24px', height: '24px', minWidth: '24px' }} />
-                    <span className="ml-3">Overall mission is to create a secure, hassle-free environment in our city.</span>
-                  </li>
+                  
                 </ol>
               </div>
             </div>

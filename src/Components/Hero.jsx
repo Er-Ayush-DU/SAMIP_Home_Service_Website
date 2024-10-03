@@ -5,7 +5,7 @@ function Hero(){
 
             <div className="relative ">
                 <div className="w-[100vw] flex justify-end">
-                    <div className="w-[68vw] h-[80vh] overflow-hidden select-none">
+                    <div className="w-[64%] h-[80vh] overflow-hidden select-none">
                         <img  src="src/assets/Images/hero_image.jpg" alt="" />
                     </div>
                 </div>
@@ -14,7 +14,7 @@ function Hero(){
                   <div className="  ">Connecting Helpers,</div>
                   <div className="">Protecting Homes</div>
                   </div>
-                    <div className="text-[18px] font-[600] w-[36%] justify-around pt-3 ml-4">
+                    <div className="text-[18px] font-[600] w-[34%] text-justify pt-3 ml-4">
                     SAMIP is an integrated platform by LUP for managing community services, offering features like attendance, vehicle, garbage, and vendor management. It also includes a complaint system and emergency SOS alerts. Residents can monitor these services through a smartphone app for transparency and convenience.
                     </div>
 
