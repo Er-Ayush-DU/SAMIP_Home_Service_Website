@@ -3,24 +3,24 @@ import React, { useState } from 'react';
 const FAQ = () => {
   const [faqs, setFaqs] = useState([
     {
-      question: 'How do I pay for my cleaning service?',
-      answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi itaque autem aspernatur corrupti ea veniam aperiam, ducimus est odio rem reprehenderit fugiat amet eaque dolores, magnam unde maxime blanditiis! Tenetur?',
+      question: ' What is the purpose of the SAMIP Software?',
+      answer: 'The app is designed to simplify communication, management, and daily operations for residents, RWAs (Resident Welfare Associations), and staff. It provides features for tracking issues, managing activities, and accessing essential services easily.',
     },
     {
-      question: 'Are the cleaning teams trained and supervised?',
-      answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi itaque autem aspernatur corrupti ea veniam aperiam, ducimus est odio rem reprehenderit fugiat amet eaque dolores, magnam unde maxime blanditiis! Tenetur?',
+      question: ' How do I register on the app?',
+      answer: 'You can register by downloading the app and following the on-screen instructions. You will need to provide your mobile number, email, and resident details to verify your membership within the society.',
     },
     {
-      question: 'Will I always have the same cleaning team?',
-      answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi itaque autem aspernatur corrupti ea veniam aperiam, ducimus est odio rem reprehenderit fugiat amet eaque dolores, magnam unde maxime blanditiis! Tenetur?',
+      question: ' Can workers and staff use the app?',
+      answer: 'Yes, workers and staff can use the app to manage their tasks, view schedules, and update their work status. They can also communicate with the RWA and residents when necessary.',
     },
     {
-      question: 'Can my animals be out while my house is being cleaned?',
-      answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi itaque autem aspernatur corrupti ea veniam aperiam, ducimus est odio rem reprehenderit fugiat amet eaque dolores, magnam unde maxime blanditiis! Tenetur?',
+      question: 'How secure is the app?',
+      answer: 'The app ensures data security with encryption protocols and secure login features. Only authorized residents, RWAs, and workers have access to specific information, keeping user data safe and private.',
     },
     {
-      question: 'Is your cleaning service guaranteed?',
-      answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi itaque autem aspernatur corrupti ea veniam aperiam, ducimus est odio rem reprehenderit fugiat amet eaque dolores, magnam unde maxime blanditiis! Tenetur?',
+      question: 'Can I pay my society maintenance through the app?',
+      answer: 'Yes, the app provides a secure payment gateway for paying society maintenance fees, utility bills, and other charges. You can track payment history and get receipts for every transaction.',
     },
     // {
     //   question: 'Do I tip the housecleaners?',
@@ -41,7 +41,7 @@ const FAQ = () => {
   return (
     <>
       <div className='text-center mb-[30px] mt-[40px] text-[2rem] font-bold'>
-        <h1 className='text-[24px] text-[#7F24C6]'>Frequently Asked Questions</h1>
+        <h1 className='text-[24px] text-[#7F24C6]'>Frequently Asked Questions ?</h1>
       </div>
 
       <div className="max-w-[800px] mx-auto mb-5">
