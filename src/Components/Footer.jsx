@@ -1,6 +1,7 @@
 import React from "react";
 import { IoMdMail } from "react-icons/io";
 import { FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
@@ -10,7 +11,7 @@ import { FaXTwitter } from "react-icons/fa6";
 function Footer() {
     return (
         <React.Fragment>
-            <div className="h-[15rem] bg-[#333131] text-white p-5">
+            <div className="h-[15rem] bg-[#0c0b0b] text-white p-5">
                 <div className="flex justify-between">
                     {/* Logo Section */}
                     <div className="h-[11rem] ">
@@ -21,12 +22,16 @@ function Footer() {
                     <div className="flex flex-col gap-2 justify-center">
                        <div>
                                 <div className="flex  items-center">
-                                        <span className="mr-2 flex"><IoMdMail /></span>
-                                        infolokutthanfoundation.in
+                                        <span className="mr-2 flex "><IoMdMail /></span>
+                                        info@lokutthanfoundation.in
                                     </div>
                                     <div className="flex  items-center">
                                         <span className="mr-2"><FaPhone /></span>
                                         +91 01117479993
+                                    </div>
+                                    <div className="flex  items-center">
+                                        <span className="mr-2"><FaWhatsapp /></span>
+                                        +91 8076218842
                                     </div>
                                     <div className="flex  items-center">
                                         <span className="mr-2"><FaMapMarkerAlt /></span>
@@ -47,9 +52,9 @@ function Footer() {
                     {/* Quick Links */}
                     <div className="flex flex-col justify-center">
                         <div className="font-bold mb-2 ">Quick Links</div>
-                        <a href="#" className="hover:underline">@M-Cell</a>
-                        <a href="#" className="hover:underline">@Manacle</a>
-                        <a href="#" className="hover:underline">@Lok Utthan</a>
+                        <a href="https://msell.in/" className="hover:underline">@M-Cell</a>
+                        <a href="https://manacleindia.com/" className="hover:underline">@Manacle</a>
+                        <a href="https://lokutthanfoundation.in/" className="hover:underline">@Lok Utthan pahel</a>
                     </div>
 
                     {/* Google Maps Iframe Section */}
