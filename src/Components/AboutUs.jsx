@@ -2,13 +2,13 @@
 function AboutUs() {
   return (
     <>
-      
-      <div className="aboutus w-screen h-auto flex flex-col  justify-center items-center mt-6 " >
-        <h1 className="aboutTitle text-[#FF0000]  text-[2.1rem] text-center text-lg p-4 uppercase font-[500] ">About SAMIP</h1>
-        <p className="aboutdetail w-[80vw] text-[15px] text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus cupiditate quidem itaque! Corporis vel maxime, blanditiis ipsum aliquam quam sunt veniam quibusdam provident, labore laborum! Corrupti harum, facilis tempore similique consectetur fugiat alias praesentium sit aspernatur aliquam quaerat exercitationem rem adipisci accusantium ex quibusdam. Corrupti atque soluta impedit nemo quisquam inventore nisi, quae ipsum rem nihil error ducimus autem, modi exercitationem porro consectetur! Iure recusandae eaque quos corporis impedit in suscipit? Velit itaque aut voluptatem saepe autem dolor ratione quas incidunt? Deleniti libero reprehenderit a corrupti adipisci doloribus, quo voluptatibus?</p>
-      </div>
 
-      <button className="SeeMore ml-[135px] pt-[20px] text-[#5a50e5]">See More....</button>
+      <div className="aboutus w-screen h-auto flex flex-col gap-5 px-[4rem]  mt-6 " >
+        <h1 className=" text-[#FF0000]  text-[2.1rem] text-5xl  uppercase font-[500] overflow-hidden">About SAMIP</h1>
+        <p className="aboutdetail font-semibold text-[15px] text-justify ">SAMIP is a comprehensive software platform designed to streamline society management through a unified interface. It empowers RWAs (Resident Welfare Associations) with a dedicated console to manage all activities efficiently. SAMIP also offers user-friendly smartphone apps for residents and workers, enabling them to monitor and access services from anywhere. With a mission to deliver seamless, secure, and integrated solutions, SAMIP ensures hassle-free communication and operations for everyone involved. Whether it's managing tasks, addressing issues, or accessing essential services, SAMIP simplifies the entire process for residents, admins, and workers alike.</p>
+      </div>
+        <button className="SeeMore font-semibold flex justify-start ml-16 text-[#5a50e5]">See More....</button>
+
     </>
   )
 

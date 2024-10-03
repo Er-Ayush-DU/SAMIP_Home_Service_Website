@@ -4,27 +4,27 @@ function Feature() {
   const content = [
     {
       title: 'Attendance Management',
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, magni corporis cumque veritatis.',
+      img: 'images/attendance.png',
     },
     {
       title: 'Visitor Management',
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, magni corporis cumque veritatis.',
+      img: 'images/visitor.png',
     },
     {
       title: 'Vendor Management',
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, magni corporis cumque veritatis.',
+      img: 'images/vendor.png',
     },
     {
       title: 'Scrap Management',
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, magni corporis cumque veritatis.',
+      img: 'images/scrap.png',
     },
     {
       title: 'Vehicle Management',
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, magni corporis cumque veritatis.',
+      img: 'images/vehicle.png',
     },
     {
       title: 'Account Management',
-      text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, magni corporis cumque veritatis.',
+      img: 'images/account.png',
     },
   ];
 
@@ -41,16 +41,16 @@ function Feature() {
           </div>
         </div>
 
-        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <div className='flex flex-wrap justify-center'>
           {content.map((item, index) => (
-            <div className='details '
+            <div className='details overflow-hidden cursor-pointer'
               key={index}
               onMouseEnter={() => setHoverIndex(index)}
               onMouseLeave={() => setHoverIndex(null)}
               style={{
                 border: '1px solid black',
                 borderRadius: '15px',
-                padding: '10px',
+                // padding: '10px',
                 marginBottom: '10px',
                 fontFamily: '"Poppins", Inter, Arial, sans-serif',
                 height: '157px',
@@ -69,14 +69,14 @@ function Feature() {
 
               }}
             >
-              <h1 style={{ fontWeight: '650', marginBottom: '10px', fontSize: '20px' }}>{item.title}</h1>
-              <p>{item.text}</p>
+              <h1 className='font-[650px] text-[25px] h-20'>{item.title}</h1>
+              <img src={item.img} alt="" className='object-cover h-[150px]'/>
             </div>
           ))}
         </div>
 
         <button
-          className="feature-btn border border-black rounded-[15px] w-[120px] h-[35px] ml-[150px] mt-[10px] bg-[#2F2BF6] text-[white] border-0"
+          className="feature-btn border-black rounded-[15px] w-[120px] h-[35px] ml-[150px] mt-[10px] bg-[#2F2BF6] text-[white] border-0"
           style={{
             transition: 'background-color 0.3s',
           }}
@@ -90,7 +90,7 @@ function Feature() {
             e.currentTarget.style.color = 'white';
           }}
         >
-          See More...
+          View More
         </button>
       </div>
     </>
