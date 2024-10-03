@@ -47,19 +47,22 @@ function TopHeader() {
                             </Link>
 
                             <Link
-                                to="/about"
+                                to=""
                                 className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6]  after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full cursor-pointer"
                             >
                                 ABOUT US
                             </Link>
 
-                            {/* Features link can be setup similarly when ready */}
-                            <Link
-                                to="/features"
-                                className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6]  after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full cursor-pointer"
+                            {/* Features link with smooth scroll */}
+                            <ScrollLink
+                                to="featureSection"
+                                smooth={true}
+                                duration={500}
+                                offset={-70} // Adjust for header height
+                                className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full cursor-pointer"
                             >
                                 FEATURES
-                            </Link>
+                            </ScrollLink>
 
                             {/* Smooth Scroll for Testimonials */}
                             <ScrollLink
