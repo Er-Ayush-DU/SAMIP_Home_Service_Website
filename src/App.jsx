@@ -3,51 +3,68 @@ import TopHeader from "./Components/TopHeader";
 import Hero from "./Components/Hero";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-import AboutUs from "./Components/AboutUs";
 import Goals from "./Components/Goals";
 import Total from "./Components/Total";
 import Feature from "./Components/Feature";
 import Testimonial from "./Components/Testimonial";
 import FAQ from "./Components/FAQ";
-import Preloader from "./Components/Preloader"; // Import Preloader component
+import Preloader from "./Components/Preloader";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Import React Router components
+import { Element } from "react-scroll"; // Import for smooth scrolling
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Set a timer to simulate loading for 2 seconds
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000); // 2000 milliseconds = 2 seconds
+    }, 1000); // 1 second delay
 
-    return () => clearTimeout(timer); // Cleanup the timeout when the component unmounts
+    return () => clearTimeout(timer); // Cleanup timeout
   }, []);
 
   return (
     <React.Fragment>
       {isLoading ? (
-        // Show Preloader while loading
-        <Preloader />
+        <Preloader /> // Show Preloader while loading
       ) : (
-        // Show main content after loading
-        <>
+        <Router>
           <header>
-            <TopHeader />
-            <Hero />
+            <TopHeader /> {/* Fixed Header with navigation */}
           </header>
+
           <main>
-            <AboutUs />
-            <Goals />
-            <Total />
-            <Feature />
-            <Testimonial />
-            <Contact />
-            <FAQ />
+            <Routes>
+              {/* Home page */}
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Hero />
+                    <Goals />
+                    <Total />
+                    <Feature />
+
+                    {/* Smooth scroll sections */}
+                    <Element name="testimonialsSection">
+                      <Testimonial />
+                    </Element>
+
+                    <Element name="contactSection">
+                      <Contact />
+                    </Element>
+
+                    <FAQ />
+                  </>
+                }
+              />
+            </Routes>
           </main>
+
           <footer>
             <Footer />
           </footer>
-        </>
+        </Router>
       )}
     </React.Fragment>
   );
