@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const cardsData = [
   { id: 1, title: 'Bhoopendra N Pandey', profile: 'Communicator & Excellent Managerial Person', contribution: 'Frontend Development', mobile: '123-456-7890', photo: 'images/bhupendra.jpg', description: 'Experienced web developer specializing in frontend technologies like React, Vue, and Angular. Proficient in JavaScript, HTML, CSS.' },
@@ -9,116 +12,78 @@ const cardsData = [
 ];
 
 const Testimonial = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [expandedCard, setExpandedCard] = useState(null); // Modal state
-  const [isAnimating, setIsAnimating] = useState(false); // Animation state
-  const cardCount = cardsData.length;
+  const sliderRef = useRef(null); // Ref to access the slider
+  const [currentSlide, setCurrentSlide] = useState(0); // Track current slide
 
-  const handleNext = () => {
-    setIsAnimating(true); // Start animation
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % cardCount);
-      setIsAnimating(false); // Reset animation state
-    }, 500); // Match the duration of the CSS transition
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,  // Display 3 slides at a time
+    slidesToScroll: 1,
+    beforeChange: (current, next) => setCurrentSlide(next), // Update currentSlide on slide change
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   };
 
-  const handlePrev = () => {
-    setIsAnimating(true);
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex - 1 + cardCount) % cardCount);
-      setIsAnimating(false);
-    }, 500);
-  };
-
-  const displayedCards = [
-    cardsData[(currentIndex) % cardCount],
-    cardsData[(currentIndex + 1) % cardCount],
-    cardsData[(currentIndex + 2) % cardCount],
-  ];
-
-  // Handle Modal Close
-  const closeExpandedCard = () => {
-    setExpandedCard(null); // Close expanded view
+  // Wrap around logic for middle card
+  const getMiddleIndex = () => {
+    const totalSlides = cardsData.length;
+    return (currentSlide + 1) % totalSlides; // Wrap around the array to target the middle card
   };
 
   return (
-    <div className="bg-[#f2f2f2] h-[850px] w-screen flex flex-col gap-16 overflow-hidden">
-      <h2 className="text-center font-semibold text-5xl mt-[80px] text-indigo-800">Testimonials</h2>
-
-      <div className="relative flex justify-center items-center overflow-hidden">
-        <button
-          className="absolute left-0 bg-gray-800 text-white p-2 rounded-full transition-transform duration-800"
-          onClick={handlePrev}
-        >
-          &lt;
-        </button>
-
-        {/* Cards */}
-        <div
-          className={`grid grid-cols-3 gap-4 transition-transform duration-500 ease-in-out overflow-hidden ${isAnimating ? 'animate-slide-right' : ''
-            }`}
-        >
-          {displayedCards.map((card, index) => (
-            <div
-              key={card.id}
-              className={`w-[400px] h-[590px] bg-white flex flex-col items-center gap-6 pt-16 rou rounded-2xl cursor-pointer transition-all duration-700 ease-in-out ${index === 1 ? 'scale-[104px] z-10 rounded-2xl' : 'scale-95 z-0'
-                } ${isAnimating && index === 2 ? 'animate-slide-in-right' : ''}`}
-              onClick={() => setExpandedCard(card)} // Set clicked card to modal data
-              
-            >
-              <div className="h-[200px] w-[200px] bg-white rounded-full flex justify-center items-center relative border-2 border-blue-500 border-dashed">
-                <div className="h-[182px] w-[182px] bg-[#FAE084] rounded-full overflow-hidden">
-                  <img src={card.photo} alt="" className='object-cover' />
+    <div className='w-4/5 m-auto relative' style={{height:'700px'}}>
+      <div className='mt-20'>
+        <Slider ref={sliderRef} {...settings}>
+          {
+            cardsData.map((d, index) => (
+              <div
+                key={d.id}
+                className={`bg-white h-[550px] text-black rounded-xl border-2 border-indigo-500 transition-transform duration-300 ${getMiddleIndex() === index ? 'scale-110 z-10' : 'scale-95 z-0'
+                  }`} // Scale the card based on the middle index
+              >
+                <div className='flex flex-col justify-center test-content'>
+                  <div className='h-56 rounded-t-xl flex justify-center items-center relative'>
+                    <div className="absolute border-dashed border-4 border-indigo-500 rounded-full h-49 w-49 flex justify-center items-center">
+                      <div className="border-4 border-white rounded-full h-52 w-52 flex justify-center items-center">
+                        <img src={d.photo} alt={d.title} className='h-48 w-48 rounded-full' />
+                      </div>
+                    </div>
+                  </div>
+                  <div className='flex flex-col justify-center items-center gap-4 p-4'>
+                    <p className='text-xl font-semibold'>{d.title}</p>
+                    <p>{d.profile}</p>
+                    <button className='bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl'>Read More</button>
+                  </div>
                 </div>
               </div>
-              <div className="mt-4 text-center text-2xl font-bold text-indigo-800">{card.title}</div>
-              <div className="text-justify px-5 font-[500]">{card.profile}</div>
-              <div className="text-justify px-5">{card.description}</div>
-            </div>
-          ))}
-        </div>
+            ))
+          }
+        </Slider>
 
-        {/* Right Arrow */}
-        <button
-          className="absolute right-2 bg-gray-800 text-white p-2 rounded-full"
-          onClick={handleNext}
-        >
-          &gt;
-        </button>
+        {/* Custom Arrow Buttons */}
+        <div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10" onClick={() => sliderRef.current.slickPrev()}>
+          <button className="bg-indigo-500 text-white p-2 rounded-full">⬅</button>
+        </div>
+        <div className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10" onClick={() => sliderRef.current.slickNext()}>
+          <button className="bg-indigo-500 text-white p-2 rounded-full">➡</button>
+        </div>
       </div>
-
-      {/* Expanded Card */}
-      {expandedCard && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-10">
-          <div className="bg-white p-8 rounded-2xl w-[800px] text-left relative">
-            {/* Close Button (Cross) */}
-            <button
-              className="absolute top-4 right-4 text-3xl font-bold text-gray-600 cursor-pointer overflow-hidden"
-              onClick={closeExpandedCard}
-            >
-              &times;
-            </button>
-
-            <div className="flex gap-6">
-              {/* Left section with photo */}
-              <div className="h-[150px] w-[150px] bg-white rounded-full flex justify-center items-center border-2 border-blue-500 border-dashed">
-                <img src={expandedCard.photo} alt={expandedCard.title} className="h-[140px] w-[140px] rounded-full object-cover" />
-              </div>
-              {/* Right section with details */}
-              <div>
-                <h2 className="text-3xl font-bold overflow-hidden">{expandedCard.title}</h2>
-                <p className="text-xl"><strong>Profile:</strong> {expandedCard.profile}</p>
-                <p className="text-xl"><strong>Contribution:</strong> {expandedCard.contribution}</p>
-                <p className="text-xl"><strong>Mobile:</strong> {expandedCard.mobile}</p>
-              </div>
-            </div>
-            {/* Full description */}
-            <div className="mt-6 text-lg">
-              {expandedCard.description}
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
