@@ -531,7 +531,7 @@ html {
   }
 }
 
-@media(max-width:377px) {
+@media(max-width:380px) {
   .bulding_safety {
     font-size: 20px;
     font-weight: 600;
