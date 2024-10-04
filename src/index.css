@@ -13,7 +13,7 @@
 
 
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,48 +26,218 @@ html {
 }
 
 
-.topHead{
+.topHead {
   /* border:4px solid black ; */
   /* box-shadow: 3px 10px 15px rgb(158, 157, 157); */
   z-index: 999;
   border-bottom: 1px solid rgb(233, 227, 227);
-  
+
 }
 
-.navItems .navItem{
+.navItems .navItem {
   font-weight: 600;
-  
+
 }
 
 
-.navItem:hover{
+.navItem:hover {
   color: #2F2BF6;
- 
-  
+
+
 }
-.sign_up_button:hover{
+
+.sign_up_button:hover {
   background-color: #fff;
   transition: 0.7s;
   border: 1px solid #2F2BF6;
 }
 
-.sign_up_button{
+.sign_up_button {
   border: 1px solid #2F2BF6;
   color: #fff;
   font-weight: 600;
 }
-.sign_up_button:hover{
+
+.sign_up_button:hover {
   color: #2F2BF6;
-  font-weight:600;
+  font-weight: 600;
 }
 
-.navbar{
+
+/* .hero-img{
+  object-fit: fill;
+} */
+
+@media (max-width: 750px) {
+  .topHead {
+    flex-direction: column;
+    /* Align items vertically */
+  }
+
+  #affixElement {
+    flex-direction: row;
+    /* Keep items in a row */
+    justify-content: space-between;
+    /* Space out items */
+  }
+}
+
+.tagline {
+  font-family: cursive;
+}
+
+
+@media (max-width: 925px) {
+  #affixElement {
+    height: 3.9rem;
+    /* TopHeader ki height kam karenge */
+    overflow: hidden;
+  }
+
+  .navItem {
+    font-size: 0.875rem;
+    /* Font size chhota karenge */
+  }
+
+  .sign_up_button {
+    padding: 0.2rem 0.6rem;
+    /* Button padding kam karenge */
+  }
+
+  .sign_up_button_content {
+    font-size: 0.75rem;
+    /* Button ke text ka size chhota karenge */
+  }
+
+  .navItems {
+    gap: 1.9rem;
+    /* Navigation items ke beech ka gap kam karenge */
+  }
+
+  img {
+    height: 2.5rem;
+    /* Logo ka size chhota karenge */
+  }
+
+  .heroImg {
+    display: none;
+  }
+
+  .hero-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    /* gap: 15rem; */
+    background-color: #fbfbfb;
+    width: 100vw;
+    padding: 0 4rem;
+  }
+
+  .tagline {
+    /* background-color: aqua; */
+    font-size: 2.7rem;
+    width: 37%;
+    font-family: cursive;
+  }
+
+  .content {
+    /* background-color: brown; */
+    width: 63%;
+  }
+}
+
+@media (max-width: 840px) {
+
+
+  .navItems {
+    display: flex;
+    /* Nav items ko flex me rakha gaya */
+    justify-content: flex-end;
+    /* Nav items ko sign-up button ke paas laayega */
+    margin-right: auto;
+    /* Thoda space dene ke liye */
+  }
+
+  .navItem {
+    font-size: 0.75rem;
+    /* Font size aur chhota karenge */
+  }
+
+  .sign_up_button {
+    margin-left: 0;
+    /* Thoda space reset karne ke liye */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    /* background-color: brown; */
+    padding: 0 2rem 1.4rem;
+    /* font-weight: normal; */
+  }
+
+  .tagline {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
+
+/* Hamburger styles */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  height: 3px;
+  width: 25px;
+  background-color: black;
+  /* ya jo bhi color chahiye */
+  margin: 3px 0;
+}
+
+/* Mobile Menu styles */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  /* Mobile menu ka background color */
+  position: absolute;
+  top: 4.4rem;
+  /* Adjust according to your header height */
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  /* Ensure it appears above other content */
+}
+
+.mobile-menu .navItem {
+  padding: 1rem;
+  /* Adjust as needed */
+  text-align: center;
+  /* Center text for mobile menu */
+}
+
+.icon {
+  font-size: 24px;
+  /* Adjust size as needed */
+  color: #2F2BF6;
+  /* Change color as per your design */
+}
+
+
+
+.navbar {
   width: 100vw;
   position: sticky;
   top: 0;
 }
-
-
 
 .aboutTitle,
 .aboutdetail,
@@ -114,24 +284,507 @@ html {
   /* Goals.jsx */
 }
 
+/* Media Query For Goals */
 
 
 
+@media (min-width: 870px) and (max-width: 1050px) {
+  .box2 .Title {
+    margin-top: -5px;
+    font-size: 25px;
+    font-weight: 600;
+  }
 
+  .inner-font {
+    overflow: hidden;
+    line-height: 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
 
+}
 
+@media (min-width: 768px) and (max-width: 870px) {
+  .inner-font {
+    font-weight: 600;
+    line-height: 16px;
+    height: auto;
+    font-size: 0.7rem;
+  }
 
-::-webkit-scrollbar{
-    width: 7px;
+  .MissionPara {
+    margin-left: -20px;
+  }
+
+  .box1 {
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .box2 {
+    height: auto;
+  }
+
 }
 
 
-::-webkit-scrollbar-track{
-    background-color:#d1e5ff;
+@media screen and (max-width: 768px) {
+  .box1 {
+    display: none;
+  }
+
+  .inner-font {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 15px;
+    height: auto;
+  }
+
+  .box2 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0 -20px;
+  }
+
+  .box2 .Title {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 15px;
+  }
+
+
 }
 
-::-webkit-scrollbar-thumb{
-    background:linear-gradient(#8d89a3,#6c6799);
-    border-radius: 20px;
-    height: 20px;
+@media (min-width: 470px) and (max-width: 768px) {
+  .GoalsHeadline {
+    font-size: 25px;
+  }
+
+  .box2 .Title {
+    font-size: 22px;
+  }
+
+
+}
+
+@media (max-width: 470px) {
+  .GoalsHeadline {
+    font-size: 16px;
+    font-weight: 900;
+  }
+
+  .box2 .Title {
+    font-size: 20px;
+  }
+
+}
+
+@media(max-width:1005px) {
+  .about_samip {
+    font-size: 1.8rem;
+  }
+
+  .about_samip_contant {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+@media(max-width:765px) {
+  .about_us_container {
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+}
+
+@media(max-width:539px) {
+  .about_us_container {
+    padding: 0 53px 0 53px;
+  }
+}
+
+@media(max-width:400px) {
+  .about_us_container {
+    padding: 0 48px 0 48px;
+  }
+
+  .about_samip {
+    font-size: 1.6rem;
+
+  }
+}
+
+
+@media(max-width:1071px) {
+  .total_bg .total_for {
+    height: 270px;
+  }
+}
+
+@media(max-width:877px) {
+
+  .total_bg .total_for {
+    height: 250px;
+  }
+
+  .belan_icon {
+    display: none;
+  }
+
+}
+
+@media(max-width:713px) {
+
+  .total_bg .total_for {
+    height: 250px;
+  }
+
+  .stat_total {
+    font-weight: 600;
+  }
+
+}
+
+@media(max-width:641px) {
+  .stat_total {
+    font-size: 28px
+      /* 20px */
+    ;
+    line-height: 1.4rem
+      /* 28px */
+    ;
+  }
+}
+
+@media(max-width:399px) {
+  .stat_total_name {
+    font-size: 1.20rem
+      /* 20px */
+    ;
+    line-height: 1.0rem
+      /* 28px */
+    ;
+    overflow: hidden;
+    font-weight: 500;
+  }
+
+  .stat_total {
+    font-weight: 500;
+  }
+
+  .offered {
+    display: flex;
+    overflow: hidden;
+  }
+}
+
+
+@media(max-width:830px) {
+  .button_view_more {
+    margin-left: 230px;
+  }
+}
+
+@media(max-width:598px) {
+  .bulding_safety {
+    font-size: 23px;
+    font-weight: 700;
+  }
+
+  .button_view_more {
+    margin-left: 190px;
+  }
+}
+
+@media(max-width:430px) {
+  .bulding_safety {
+    font-size: 23px;
+    font-weight: 700;
+  }
+
+  .button_view_more {
+    margin-left: 160px;
+  }
+}
+
+@media(min-width:506px) {
+  .show {
+    display: none;
+  }
+}
+
+@media(max-width:506px) {
+  .hiden {
+    display: none;
+  }
+
+  .show {
+    display: contents;
+
+  }
+}
+
+@media(max-width:380px) {
+  .bulding_safety {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .title {
+    height: 130px;
+  }
+
+}
+
+@media(max-width:357px) {
+
+  .button_view_more {
+    margin-left: 120px;
+  }
+
+}
+
+@media(max-width:353px) {
+  .button_view_more {
+    margin-left: 110px;
+  }
+
+  .title_feature {
+    font-size: 23px;
+  }
+}
+
+
+@media(max-width:961px) {
+  .quries_img {
+    width: 30rem;
+  }
+}
+
+@media(max-width:885px) {
+  .quries_img {
+    width: 28rem;
+  }
+}
+
+@media(max-width:800px) {
+  .quries_img {
+    display: none;
+  }
+
+  .quries_form {
+    width: 80%;
+  }
+}
+
+
+
+.slick-slide>div {
+  margin: 0 10px;
+  /* overflow: hidden; */
+}
+
+.slick-slide .test-content {
+  padding: 38px 0;
+  overflow: hidden;
+}
+
+.custom-arrow {
+  font-size: 24px;
+  /* Adjust as needed */
+  color: white;
+  /* Arrow color */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Background color for visibility */
+  border-radius: 50%;
+  /* Round shape */
+  padding: 10px;
+  /* Padding */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  position: absolute;
+  /* Positioning */
+  top: 50%;
+  /* Center vertically */
+  transform: translateY(-50%);
+  /* Center vertically */
+  z-index: 1;
+  /* Ensure they are above other elements */
+}
+
+.next {
+  right: 10px;
+  /* Position on the right */
+}
+
+.prev {
+  left: 10px;
+  /* Position on the left */
+}
+
+/* Media Query For Footer */
+
+@media (min-width:950px) and (max-width:1200px) {
+  .FooterLogo img {
+    position: relative;
+    top: 40px;
+    height: 128px;
+    width: 150px;
+  }
+
+  /* .Footer_Cont_Media {
+    position: relative;
+    top: 5px;
+  } */
+
+  /* .FooterContact div {
+    font-size: 14px;
+
+  } */
+
+ 
+  .QuickLinks a {
+    font-size: 16px;
+  }
+
+  .GoogleMap {
+    
+    width: 320px;
+    height: 200px;
+    overflow: hidden;
+  }
+
+}
+
+/* @media(max-width:993px){
+
+  .FooterLogo img {
+    position: relative;
+    top: 40px;
+    height: 140px;
+    width: 300px;
+  }
+
+} */
+
+@media (min-width:580px) and (max-width:950px) {
+  .GoogleMap {
+    display: none
+  }
+
+  .FooterLogo img {
+    position: relative;
+    top: 40px;
+    height: 130px;
+    width: 150px;
+
+  }
+
+
+  .FooterContact div {
+    font-size: 14px;
+
+  }
+
+  .QuickLinks {
+    position: relative;
+    top: -19px;
+  }
+
+  .QuickLinks a {
+    font-size: 14px;
+  }
+
+}
+
+@media (min-width:450px) and (max-width:580px) {
+  .FooterLogo img {
+    position: relative;
+    top: 50px;
+    height: 100px;
+    width: 110px;
+  }
+
+  .FooterContact div {
+    font-size: 13px;
+  }
+
+  .FooterSocial a {
+    font-size: 17px;
+  }
+
+  .QuickLinks {
+    position: relative;
+    top: -29px;
+  }
+
+  .QuickLinks a {
+    font-size: 12px;
+  }
+
+  .GoogleMap {
+    display: none
+  }
+}
+
+@media (max-width:450px) {
+  .FooterLogo img {
+    display: none;
+  }
+
+  .FooterContact div {
+    font-size: 10px;
+  }
+
+  .FooterSocial a {
+    font-size: 15px;
+  }
+
+  .QuickLinks {
+    position: relative;
+    top: -20px;
+  }
+
+  .QuickLinks a {
+    font-size: 10px;
+  }
+
+  .GoogleMap {
+    display: none
+  }
+
+  .copyRights div {
+    font-size: 10px;
+  }
+
+  .foot_parent__{
+    height: 200px;
+    padding-top: 0;
+  }
+
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#8d89a3, #6c6799);
+  border-radius: 20px;
+  height: 20px;
 }

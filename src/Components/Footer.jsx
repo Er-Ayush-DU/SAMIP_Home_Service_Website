@@ -11,7 +11,7 @@ import { FaXTwitter } from "react-icons/fa6";
 function Footer() {
     return (
         <React.Fragment>
-            <div className=" overflow-hidden h-[15rem] bg-[#0c0b0b] text-white p-5">
+            <div className=" overflow-hidden h-[15rem] bg-[#0c0b0b] text-white p-5 foot_parent__">
                 <div className="h-[250px] overflow-hidden flex justify-between">
                     {/* Logo Section */}
                     <div className="FooterLogo h-[11rem] ">
