@@ -16,7 +16,7 @@ const Goals = () => {
             </div>
 
             {/* Our Goals Section */}
-            <div className="box2">
+            <div className="box2 mt-[-25px] pb-2">
               <div className="overflow-hidden flex items-center justify-center text-indigo-800">
                 <u className="overflow-hidden">Our Goals</u>
               </div>
