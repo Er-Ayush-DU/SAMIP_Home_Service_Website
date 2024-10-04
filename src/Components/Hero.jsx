@@ -1,29 +1,45 @@
 import React from "react";
 
-function Hero(){
+function Hero() {
     return <React.Fragment>
 
-            <div className="relative ">
-                <div className="w-[100vw] flex justify-end">
-                    <div className="w-[64%] h-[80vh] overflow-hidden select-none">
-                        <img  src="src/assets/Images/hero_image.jpg" alt="" />
-                    </div>
+        {/* <div className="relative ">
+            <div className="w-[100vw] flex justify-end">
+                <div className="w-[64%] h-[80vh] overflow-hidden select-none">
+                    <img  src="src/assets/Images/hero_image.jpg" alt="" />
+                    <img src="images/mission.jpg" alt="" />
                 </div>
-                <div className="absolute top-[6.7rem] left-14">
-                  <div className="text-[#7F24C6] text-[56px] font-[700] select-none">
-                  <div className="  ">Connecting Helpers,</div>
-                  <div className="">Protecting Homes</div>
-                  </div>
-                    <div className="text-[18px] font-[600] w-[34%] text-justify pt-3 ml-4">
+            </div>
+            <div className="absolute top-[6.7rem] left-14">
+                <div className="text-[#7F24C6] text-[56px] font-[700] select-none">
+                    <div className="  ">Connecting Helpers,</div>
+                    <div className="">Protecting Homes</div>
+                </div>
+                <div className="text-[18px] font-[600] w-[34%] text-justify pt-3 ml-4">
                     SAMIP is an integrated platform by LUP for managing community services, offering features like attendance, vehicle, garbage, and vendor management. It also includes a complaint system and emergency SOS alerts. Residents can monitor these services through a smartphone app for transparency and convenience.
-                    </div>
-
                 </div>
-
-               
 
             </div>
-           </React.Fragment>
+        </div> */}
+
+        <div className="h-auto w-screen flex justify-around space-x-6">
+            <div className="w-2/5 pl-16 hero-content md:text-[40px] md:font-medium !important">
+                <div className="text-[#7F24C6] text-[56px] font-[700] tagline">
+                    Connecting Helpers, Protecting Homes
+                </div>
+                <div className="text-[18px] font-[600] text-justify pt-10 content">
+                    SAMIP is an integrated platform by LUP for managing community services, offering features like attendance, vehicle, garbage, and vendor management. It also includes a complaint system and emergency SOS alerts. Residents can monitor these services through a smartphone app for transparency and convenience.
+                </div>
+            </div>
+
+
+            <div className="w-3/5 heroImg">
+                <img src="src/assets/Images/hero_image.jpg" alt="" className="object-fill h-full w-full"/>
+                {/* <img src="images/mission.jpg" alt="" className="hero-img"/> */}
+            </div>
+        </div>
+
+    </React.Fragment>
 }
 
 export default Hero;
