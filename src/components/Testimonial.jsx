@@ -64,6 +64,7 @@ const Testimonial = () => {
               className={`w-[400px] h-[590px] bg-white flex flex-col items-center gap-6 pt-16 rou rounded-2xl cursor-pointer transition-all duration-700 ease-in-out ${index === 1 ? 'scale-[104px] z-10 rounded-2xl' : 'scale-95 z-0'
                 } ${isAnimating && index === 2 ? 'animate-slide-in-right' : ''}`}
               onClick={() => setExpandedCard(card)} // Set clicked card to modal data
+              
             >
               <div className="h-[200px] w-[200px] bg-white rounded-full flex justify-center items-center relative border-2 border-blue-500 border-dashed">
                 <div className="h-[182px] w-[182px] bg-[#FAE084] rounded-full overflow-hidden">

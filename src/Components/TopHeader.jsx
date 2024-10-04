@@ -25,6 +25,9 @@ function TopHeader() {
         };
     }, []);
 
+
+
+
     return (
         <React.Fragment>
             <div className="topHead mb-2">
@@ -37,7 +40,7 @@ function TopHeader() {
                         <img className="h-16" src="src/assets/Images/samip-logo2.png" alt="Logo" />
                     </div>
                     <div className="flex justify-around items-center gap-20">
-                        <div className="flex align-center gap-11 navItems">
+                        <div className="flex align-center gap-11 navItems z-[99]">
                             {/* React Router Links for Home and About */}
                             <Link
                                 to="/"
@@ -46,16 +49,18 @@ function TopHeader() {
                                 HOME
                             </Link>
 
+
+
                             <Link
                                 to=""
                                 className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6]  after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full cursor-pointer"
                             >
+
                                 ABOUT US
 
-                                
-                               
+
                             </Link>
-                            
+
 
                             {/* Features link with smooth scroll */}
                             <ScrollLink
