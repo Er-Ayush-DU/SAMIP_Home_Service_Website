@@ -635,39 +635,44 @@ html {
   .FooterLogo img {
     position: relative;
     top: 40px;
-    height: 120px;
-    width: 100px;
+    height: 128px;
+    width: 150px;
   }
 
-  .Footer_Cont_Media {
+  /* .Footer_Cont_Media {
     position: relative;
     top: 5px;
-  }
+  } */
 
-  .FooterContact div {
+  /* .FooterContact div {
     font-size: 14px;
 
-  }
+  } */
 
-  .QuickLinks {
-    position: relative;
-    top: -19px;
-  }
-
+ 
   .QuickLinks a {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .GoogleMap {
-    position: relative;
-    top: 50px;
-    width: 200px;
-    height: 100px;
+    
+    width: 320px;
+    height: 200px;
     overflow: hidden;
   }
 
 }
 
+/* @media(max-width:993px){
+
+  .FooterLogo img {
+    position: relative;
+    top: 40px;
+    height: 140px;
+    width: 300px;
+  }
+
+} */
 
 @media (min-width:580px) and (max-width:950px) {
   .GoogleMap {
@@ -677,8 +682,8 @@ html {
   .FooterLogo img {
     position: relative;
     top: 40px;
-    height: 120px;
-    width: 100px;
+    height: 130px;
+    width: 150px;
 
   }
 
@@ -704,24 +709,24 @@ html {
     position: relative;
     top: 50px;
     height: 100px;
-    width: 80px;
+    width: 110px;
   }
 
   .FooterContact div {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .FooterSocial a {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .QuickLinks {
     position: relative;
-    top: -20px;
+    top: -29px;
   }
 
   .QuickLinks a {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .GoogleMap {
@@ -757,6 +762,11 @@ html {
 
   .copyRights div {
     font-size: 10px;
+  }
+
+  .foot_parent__{
+    height: 200px;
+    padding-top: 0;
   }
 
 }
