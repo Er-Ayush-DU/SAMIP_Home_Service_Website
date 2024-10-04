@@ -36,14 +36,14 @@ function Feature() {
         <div className="samipTitle flex flex-col justify-center items-center mt-[40px] mb-[20px] ">
           <h1 className="text-[22px] text-lg uppercase font-bold text-[#FF0000]">Samip-feature</h1>
           <div>
-            <h1 className="font-extrabold text-[26px] text-[#7F24C6] bulding_safety ">Building Stronger Communities <span className='hiden'>Through</span></h1>
-            <h1 className="font-extrabold text-[26px] text-center text-[#7F24C6] bulding_safety"><span className='show'>Through</span>Safety and Service </h1>
+            <h1 className="font-extrabold text-[26px] text-[#7F24C6]">Building Stronger Communities Through</h1>
+            <h1 className="font-extrabold text-[26px] text-center text-[#7F24C6]">Safety and Service</h1>
           </div>
         </div>
 
-        <div className='flex flex-wrap justify-center '>
+        <div className='flex flex-wrap justify-center'>
           {content.map((item, index) => (
-            <div className='details overflow-hidden cursor-pointer feature_item'
+            <div className='details overflow-hidden cursor-pointer'
               key={index}
               onMouseEnter={() => setHoverIndex(index)}
               onMouseLeave={() => setHoverIndex(null)}
@@ -60,23 +60,23 @@ function Feature() {
                 alignItems: 'center',
                 marginLeft: '15px',
                 textAlign: 'center',
-                backgroundColor: hoverIndex === index 
-                  ? '#6A9CE8' 
-                  : (hoverIndex === null && index === 1) 
-                    ? '#6A9CE8' 
+                backgroundColor: hoverIndex === index
+                  ? '#6A9CE8'
+                  : (hoverIndex === null && index === 1)
+                    ? '#6A9CE8'
                     : 'transparent', // Default blue only if not hovering any other box
                 transition: 'background-color 0.3s', // Smooth transition
 
               }}
             >
-              <h1 className='font-[650px] text-[25px] h-20 title_feature'>{item.title}</h1>
-              <img src={item.img} alt="" className='object-cover h-[150px] title img'/>
+              <h1 className='font-[650px] text-[25px] h-20'>{item.title}</h1>
+              <img src={item.img} alt="" className='object-cover h-[150px]' />
             </div>
           ))}
         </div>
 
         <button
-          className="feature-btn border-black rounded-[15px] w-[120px] h-[35px] ml-[150px] mt-[10px] bg-[#2F2BF6] text-[white] border-0 button_view_more"
+          className="feature-btn border-black rounded-[15px] w-[120px] h-[35px] ml-[150px] mt-[10px] bg-[#2F2BF6] text-[white] border-0"
           style={{
             transition: 'background-color 0.3s',
           }}

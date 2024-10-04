@@ -287,24 +287,6 @@ html {
 /* Media Query For Goals */
 
 
-/* Default styling (for large screens) */
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.box1,
-.box2 {
-  margin-bottom: 20px;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 
 @media (min-width: 870px) and (max-width: 1050px) {
   .box2 .Title {

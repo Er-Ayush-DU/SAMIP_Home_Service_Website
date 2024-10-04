@@ -12,7 +12,7 @@ const Goals = () => {
         <div className="flex justify-around px-14 mt-7">
           <div className="container h-[905px] bg-pink-400">
             <div className="box1 relative">
-              <img src="images/goals.jpg" alt="" className='absolute top-0 left-0 object-cover object-center w-full h-full' />
+              <img src="images/goals.jpg" alt="" className='absolute top-0 left-0 object-cover object-center w-full h-full goals-img' />
             </div>
             <div className="box2">
               <div className="overflow-hidden flex items-center justify-center text-indigo-800"><u className='overflow-hidden'>Our Goals</u></div>
@@ -75,7 +75,7 @@ const Goals = () => {
               </div>
             </div>
             <div className="box1 relative">
-              <img src="images/mission.jpg" alt="" className='absolute top-0 left-0 object-cover object-center w-full h-full' />
+              <img src="images/mission.jpg" alt="" className='absolute top-0 left-0 object-cover object-center w-full h-full goals-img' />
             </div>
           </div>
         </div>
