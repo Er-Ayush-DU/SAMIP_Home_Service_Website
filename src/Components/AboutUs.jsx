@@ -90,7 +90,7 @@ function AboutUs() {
         the entire process for residents, admins, and workers alike.
       </p>
 
-      <div className="flex flex-wrap mt-10 justify-around mx-5 gap-5">
+      <div className="flex flex-wrap mt-10 justify-around mx-5 ">
         {data.map((item, index) => (
           <div
             key={index}
