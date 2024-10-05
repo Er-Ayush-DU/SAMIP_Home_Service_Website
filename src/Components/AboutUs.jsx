@@ -39,7 +39,7 @@ const data = [
 
 
         </p>
-        <Link to="/about" className="about-button">
+        <Link to="/lup" className="about-button">
           <button className="h-8 w-28 bg-[#2F2BF6] flex justify-center items-center rounded-md about_button">
             Read More
           </button>
@@ -61,7 +61,7 @@ const data = [
           Manacle Technologies Pvt. Ltd is a software service
           provider company, established in 2012, CMMI Level 3 certified.
         </p>
-        <Link to="/about" className="about-button">
+        <Link to="/manacle" className="about-button">
           <button className="h-8 w-28 bg-[#2F2BF6] flex justify-center items-center rounded-md about_button">
             Read More
           </button>

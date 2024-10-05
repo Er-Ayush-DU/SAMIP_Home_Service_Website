@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
 function Feature() {
   const content = [
@@ -74,7 +75,8 @@ function Feature() {
             </div>
           ))}
         </div>
-
+          <Link to="/feature">
+            
         <button
           className="feature-btn border-black rounded-[15px] w-[120px] h-[35px] ml-[150px] mt-[10px] bg-[#2F2BF6] text-[white] border-0 button_view_more"
           style={{
@@ -92,6 +94,7 @@ function Feature() {
         >
           View More
         </button>
+          </Link>
       </div>
     </>
   );
