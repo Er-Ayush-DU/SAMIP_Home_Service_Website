@@ -8,11 +8,11 @@ function Feature_Module() {
           <center><div><h1>Features</h1></div></center>
   
           <div className="Feature" id="Feature1">
-            <div className="Image">
-              <img src="src/assets/Account Management.png" alt="" />
+            <div className="Image_">
+              <img src="feature/Account-Management.png" alt="" />
             </div>
   
-            <div className="content">
+            <div className="content_">
               <h1>Account management</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptates accusamus iusto quas mollitia minus, ratione doloremque, labore consectetur in magnam possimus temporibus ab veritatis laborum odit ullam dolores. Voluptatem quisquam tempore aliquam eaque deleniti. Temporibus quam placeat, est consequatur, qui non optio unde dignissimos vitae dolorem fuga deserunt tenetur sit ratione alias, distinctio recusandae aliquid. In sed velit, neque explicabo totam fugit ab quis sint voluptas a harum sunt quasi commodi inventore consectetur. Quaerat nesciunt eligendi saepe cum distinctio.</p>
             </div>
@@ -21,24 +21,26 @@ function Feature_Module() {
   
           <div className="Feature" id="Feature2">
   
-            <div className="content">
+            <div className="content_">
               <h1>Admin Console</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptates accusamus iusto quas mollitia minus, ratione doloremque, labore consectetur in magnam possimus temporibus ab veritatis laborum odit ullam dolores. Voluptatem quisquam tempore aliquam eaque deleniti. Temporibus quam placeat, est consequatur, qui non optio unde dignissimos vitae dolorem fuga deserunt tenetur sit ratione alias, distinctio recusandae aliquid. In sed velit, neque explicabo totam fugit ab quis sint voluptas a harum sunt quasi commodi inventore consectetur. Quaerat nesciunt eligendi saepe cum distinctio.</p>
             </div>
   
   
-            <div className="Image">
-              <img src="src/assets/Admin Console.png" alt="" />
+            <div className="Image_">
+              <img src="feature/Admin-Console.png" alt="" />
             </div>
           </div >
   
   
           <div className="Feature" id="Feature3">
-            <div className="Image">
-              <img src="src/assets/Profile management.png" alt="" />
+            <div className="Image_">
+              <img src="feature/Profile-management.png" alt="" />
             </div>
+
+            
   
-            <div className="content">
+            <div className="content_">
               <h1>Profile management</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptates accusamus iusto quas mollitia minus, ratione doloremque, labore consectetur in magnam possimus temporibus ab veritatis laborum odit ullam dolores. Voluptatem quisquam tempore aliquam eaque deleniti. Temporibus quam placeat, est consequatur, qui non optio unde dignissimos vitae dolorem fuga deserunt tenetur sit ratione alias, distinctio recusandae aliquid. In sed velit, neque explicabo totam fugit ab quis sint voluptas a harum sunt quasi commodi inventore consectetur. Quaerat nesciunt eligendi saepe cum distinctio.</p>
             </div>
@@ -46,24 +48,24 @@ function Feature_Module() {
   
           <div className="Feature" id="Feature4">
   
-            <div className="content">
+            <div className="content_">
               <h1>Surveys & Events Management</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptates accusamus iusto quas mollitia minus, ratione doloremque, labore consectetur in magnam possimus temporibus ab veritatis laborum odit ullam dolores. Voluptatem quisquam tempore aliquam eaque deleniti. Temporibus quam placeat, est consequatur, qui non optio unde dignissimos vitae dolorem fuga deserunt tenetur sit ratione alias, distinctio recusandae aliquid. In sed velit, neque explicabo totam fugit ab quis sint voluptas a harum sunt quasi commodi inventore consectetur. Quaerat nesciunt eligendi saepe cum distinctio.</p>
             </div>
   
   
-            <div className="Image">
-              <img src="src/assets/Surveys & Events Management.png" alt="" />
+            <div className="Image_">
+              <img src="feature/Survet.png" alt="" />
             </div>
           </div >
   
   
           <div className="Feature" id="Feature5">
-            <div className="Image">
-              <img src="src/assets/Reporting.png" alt="" />
+            <div className="Image_">
+              <img src="feature/Reporting.png" alt="" />
             </div>
   
-            <div className="content">
+            <div className="content_">
               <h1>Reporting</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptates accusamus iusto quas mollitia minus, ratione doloremque, labore consectetur in magnam possimus temporibus ab veritatis laborum odit ullam dolores. Voluptatem quisquam tempore aliquam eaque deleniti. Temporibus quam placeat, est consequatur, qui non optio unde dignissimos vitae dolorem fuga deserunt tenetur sit ratione alias, distinctio recusandae aliquid. In sed velit, neque explicabo totam fugit ab quis sint voluptas a harum sunt quasi commodi inventore consectetur. Quaerat nesciunt eligendi saepe cum distinctio.</p>
             </div>
@@ -72,14 +74,14 @@ function Feature_Module() {
   
           <div className="Feature" id="Feature6">
   
-            <div className="content">
+            <div className="content_">
               <h1>Vendor Management</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptates accusamus iusto quas mollitia minus, ratione doloremque, labore consectetur in magnam possimus temporibus ab veritatis laborum odit ullam dolores. Voluptatem quisquam tempore aliquam eaque deleniti. Temporibus quam placeat, est consequatur, qui non optio unde dignissimos vitae dolorem fuga deserunt tenetur sit ratione alias, distinctio recusandae aliquid. In sed velit, neque explicabo totam fugit ab quis sint voluptas a harum sunt quasi commodi inventore consectetur. Quaerat nesciunt eligendi saepe cum distinctio.</p>
             </div>
   
   
-            <div className="Image">
-              <img src="src/assets/Vendor Management.png" alt="" />
+            <div className="Image_">
+              <img src="feature/Vendor-Management.png" alt="" />
             </div>
           </div >
   
@@ -88,7 +90,7 @@ function Feature_Module() {
   
           {/* Another 9 Content */}
   
-          <div className="Feature" id="Feature7">
+          {/* <div className="Feature" id="Feature7">
             <div className="Image">
               <img src="src/assets/Account Management.png" alt="" />
             </div>
@@ -200,7 +202,7 @@ function Feature_Module() {
               <h1>Notice Board</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptates accusamus iusto quas mollitia minus, ratione doloremque, labore consectetur in magnam possimus temporibus ab veritatis laborum odit ullam dolores. Voluptatem quisquam tempore aliquam eaque deleniti. Temporibus quam placeat, est consequatur, qui non optio unde dignissimos vitae dolorem fuga deserunt tenetur sit ratione alias, distinctio recusandae aliquid. In sed velit, neque explicabo totam fugit ab quis sint voluptas a harum sunt quasi commodi inventore consectetur. Quaerat nesciunt eligendi saepe cum distinctio.</p>
             </div>
-          </div>
+          </div> */}
   
   
   
