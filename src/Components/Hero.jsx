@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 function Hero() {
-    return <React.Fragment>
+    const [activeImage, setActiveImage] = useState(0);
 
-        <div className="h-auto w-screen flex justify-around space-x-6">
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveImage((prevImage) => (prevImage === 0 ? 1 : 0));
+        }, 2000); // Change image every 5 seconds
+
+        return () => clearInterval(interval); // Clear interval on unmount
+    }, []);
+
+    return (
+        <div className="h-[600px] w-screen flex justify-around space-x-6 bg-lime-300">
             <div className="w-2/5 pl-16 mt-10 hero-content md:text-[40px] md:font-medium !important">
                 <div className="text-[#7F24C6] text-[56px] font-[700] tagline">
                     Connecting Helpers, Protecting Homes
@@ -13,13 +22,22 @@ function Hero() {
                 </div>
             </div>
 
-
-            <div className="w-3/5 heroImg">
-                <img src="Hero_Images/hero_image.jpg" alt="" className="object-fill h-full w-full" />
+            <div className="w-3/5 heroImg relative">
+                <img
+                    src="Hero_Images/hero_image.png"
+                    alt="Hero Image"
+                    className={`object-fill h-full w-full absolute top-0 left-0 transition-opacity duration-1000 ${activeImage === 0 ? "opacity-100" : "opacity-0"
+                        }`}
+                />
+                <img
+                    src="Hero_Images/society.png"
+                    alt="Society Image"
+                    className={`object-fill h-full w-full absolute top-0 left-0 transition-opacity duration-1000 ${activeImage === 1 ? "opacity-100" : "opacity-0"
+                        }`}
+                />
             </div>
         </div>
-
-    </React.Fragment>
+    );
 }
 
 export default Hero;
