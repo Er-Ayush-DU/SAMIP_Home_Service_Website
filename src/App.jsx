@@ -5,11 +5,11 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
 import AboutPage from "./components/AboutPage";
-import Goals from "./Components/Goals";
-import Total from "./Components/Total";
+import Goals from "./components/Goals";
+import Total from "./components/Total";
 import Feature from "./components/Feature";
-import Testimonial from "./Components/Testimonial";
-import FAQ from "./Components/FAQ";
+import Testimonial from "./components/Testimonial";
+import FAQ from "./components/FAQ";
 import Preloader from "./components/Preloader"; // Import Preloader component
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Import React Router components
 import { Element } from "react-scroll"; // Import for smooth scrolling
