@@ -23,15 +23,16 @@ function Footer() {
                         <div className="FooterContact">
                             <div className="flex  items-center">
                                 <span className="mr-2 flex "><IoMdMail /></span>
-                                info@lokutthanfoundation.in
+                                <a href="mailto:info@lokutthanfoundation.in">info@lokutthanfoundation.in</a>
+
                             </div>
                             <div className="flex  items-center">
                                 <span className="mr-2"><FaPhone /></span>
-                                +91 01117479993
+                                <a href="Tel:+91 01117479993">+91 01117479993</a>
                             </div>
                             <div className="flex  items-center">
                                 <span className="mr-2"><FaWhatsapp /></span>
-                                +91 8076218842
+                                <a href="Tel:+91 8076218842">+91 8076218842</a>
                             </div>
                             <div className="flex  items-center">
                                 <span className="mr-2"><FaMapMarkerAlt /></span>
@@ -50,7 +51,7 @@ function Footer() {
                     </div>
 
                     {/* Quick Links */}
-                    <div className="QuickLinks flex flex-col justify-center">
+                    <div className="QuickLinks flex flex-col justify-center mt-[-55px]">
                         <div className="font-bold mb-2 ">Quick Links</div>
                         <a href="https://lokutthanfoundation.in/" className="hover:underline">@Lok Utthan Pehal</a>
                         <a href="https://manacleindia.com/" className="hover:underline">@Manacle Technologies</a>

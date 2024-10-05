@@ -5,8 +5,10 @@ const Goals = () => {
     <>
       <div className="w-screen mb-10">
         <div className="text-style mt-10 text-center h-[80px] text-3xl font-bold text-[#7F24C6]">
-          <div>Simplify Your Society Life with Trusted</div>
-          <div>Security and Reliable Services</div>
+
+          <div className="">Simplify Your Society Life with Trusted</div>
+          <div className="">Security and Reliable Services</div>
+
         </div>
 
         <div className="flex justify-around px-14 mt-7">

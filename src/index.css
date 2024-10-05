@@ -42,8 +42,45 @@ html {
 
 .navItem:hover {
   color: #2F2BF6;
+}
 
 
+
+.about_button {
+  border: 1px solid #2F2BF6;
+  color: #fff;
+}
+
+.about_button:hover {
+  background-color: #fff;
+  transition: 0.7s;
+  border: 1px solid #2F2BF6;
+  color: #2F2BF6;
+}
+
+.test-button {
+  border: 1px solid #2F2BF6;
+
+}
+
+.test-button:hover {
+  background-color: #fff;
+  transition: 0.7s;
+  border: 1px solid #2F2BF6;
+  color: #2F2BF6;
+}
+
+
+.send_message {
+  border: 1px solid #2F2BF6;
+}
+
+
+.send_message:hover {
+  background-color: #fff;
+  transition: 0.7s;
+  border: 1px solid #2F2BF6;
+  color: #2F2BF6;
 }
 
 .sign_up_button:hover {
@@ -386,19 +423,35 @@ html {
 
 }
 
+
+
+@media (max-width:1400px) {
+  .container-box {
+    margin: 50px 10px;
+    gap: 5px;
+  }
+}
+
+@media (max-width:1350px) {
+  .container-box {
+    gap: 30px;
+
+  }
+}
+
 @media (max-width:450px) {
-  .about-button{
+  .about-button {
     overflow: hidden;
     /* height: 30px; */
   }
 
-  .about-paragraph{
+  .about-paragraph {
     font-size: 0.974rem;
   }
 }
 
-@media (max-width:411px){
-  .samip-full-form{
+@media (max-width:411px) {
+  .samip-full-form {
     font-size: 1.1rem;
   }
 }
@@ -408,7 +461,7 @@ html {
     font-size: 0.87rem;
   }
 
-  .about-paragraph{
+  .about-paragraph {
     font-size: 0.8rem;
   }
 }
@@ -640,13 +693,13 @@ html {
 
   } */
 
- 
+
   .QuickLinks a {
     font-size: 16px;
   }
 
   .GoogleMap {
-    
+
     width: 320px;
     height: 200px;
     overflow: hidden;
@@ -684,11 +737,6 @@ html {
 
   }
 
-  .QuickLinks {
-    position: relative;
-    top: -19px;
-  }
-
   .QuickLinks a {
     font-size: 14px;
   }
@@ -711,10 +759,6 @@ html {
     font-size: 17px;
   }
 
-  .QuickLinks {
-    position: relative;
-    top: -29px;
-  }
 
   .QuickLinks a {
     font-size: 12px;
@@ -731,20 +775,16 @@ html {
   }
 
   .FooterContact div {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .FooterSocial a {
-    font-size: 15px;
+    font-size: 20px;
   }
 
-  .QuickLinks {
-    position: relative;
-    top: -20px;
-  }
 
   .QuickLinks a {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .GoogleMap {
@@ -755,14 +795,18 @@ html {
     font-size: 10px;
   }
 
-  .foot_parent__{
+  .foot_parent__ {
     height: 200px;
     padding-top: 0;
   }
 
 }
 
-
+@media (max-width:350px) {
+  .Footer_Cont_Media {
+    padding: 0 35px 0 15px;
+  }
+}
 
 
 ::-webkit-scrollbar {

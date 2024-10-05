@@ -8,7 +8,7 @@ function Contact(){
             </div>
             <div className="flex justify-center items-center w-[50vw] overflow-hidden bg-gray-100 quries_form">
             <div className="bg-white shadow-lg rounded-lg p-8 w-full ">
-                <h2 className="text-3xl font-bold mb-8 text-center overflow-hidden">Submit your response?</h2>
+                    <h2 className="text-3xl font-bold mb-8 text-center overflow-hidden text-[#2F2BF6]">Submit your response?</h2>
 
                 <form className="space-y-6">
                 {/* First Row: Name and Email */}
@@ -55,7 +55,7 @@ function Contact(){
                 <div className="text-center">
                     <button
                     type="submit"
-                    className="bg-[#2F2BF6] text-white font-semibold py-2 px-5 rounded-lg w-full md:w-auto"
+                    className="bg-[#2F2BF6] text-white font-semibold py-2 px-5 rounded-lg w-full md:w-auto send_message"
                     >
                     Send Message
                     </button>

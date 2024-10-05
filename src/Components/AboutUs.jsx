@@ -15,7 +15,7 @@ const data = [
           management through a unified interface.
         </p>
         <Link to="/about" className="about-button">
-          <button className="h-8 w-28 bg-indigo-500 flex justify-center items-center rounded-md">
+          <button className="h-8 w-28 bg-[#2F2BF6] flex justify-center items-center rounded-md about_button">
             Read More
           </button>
         </Link>
@@ -40,7 +40,7 @@ const data = [
 
         </p>
         <Link to="/about" className="about-button">
-          <button className="h-8 w-28 bg-indigo-500 flex justify-center items-center rounded-md">
+          <button className="h-8 w-28 bg-[#2F2BF6] flex justify-center items-center rounded-md about_button">
             Read More
           </button>
         </Link>
@@ -62,7 +62,7 @@ const data = [
           provider company, established in 2012, CMMI Level 3 certified.
         </p>
         <Link to="/about" className="about-button">
-          <button className="h-8 w-28 bg-indigo-500 flex justify-center items-center rounded-md">
+          <button className="h-8 w-28 bg-[#2F2BF6] flex justify-center items-center rounded-md about_button">
             Read More
           </button>
         </Link>
@@ -90,7 +90,7 @@ function AboutUs() {
         the entire process for residents, admins, and workers alike.
       </p>
 
-      <div className="flex flex-wrap mt-10 justify-around mx-5 ">
+      <div className="flex flex-wrap mt-10 justify-around container-box">
         {data.map((item, index) => (
           <div
             key={index}
