@@ -100,10 +100,94 @@ html {
   font-weight: 600;
 }
 
+@media (max-width: 1450px) {
+  .type-text {
+    font-size: 27px;
+  }
+}
 
-/* .hero-img{
-  object-fit: fill;
-} */
+@media (max-width: 1397px) {
+  .hero_content {
+    display: none;
+  }
+
+  .hero2_content {
+    display: block;
+  }
+}
+
+
+
+@media (max-width: 1250px) {
+  .tagline {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .tagline {
+    font-size: 50px;
+  }
+
+  .type-text {
+    font-size: 21.5px;
+  }
+}
+
+@media (max-width: 1105px) {
+  .tagline {
+    font-size: 50px;
+  }
+
+  .type-text {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 1065px) {
+  .hero-content {
+    position: relative;
+  }
+
+  .tagline {
+    font-size: 50px;
+    position: absolute;
+    top: 100px;
+  }
+
+  .hero2_content {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1035px) {
+  .tagline {
+    font-size: 50px;
+  }
+
+  .type-text {
+    font-size: 19px;
+  }
+
+  .hero_content {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1005px) {
+  .tagline {
+    font-size: 45px;
+  }
+
+  .type-text {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .hero_content {
+    font-size: 16px;
+  }
+}
 
 @media (max-width: 750px) {
   .topHead {
@@ -149,7 +233,7 @@ html {
     /* Navigation items ke beech ka gap kam karenge */
   }
 
-  img {
+  .top-logo img {
     height: 2.5rem;
     /* Logo ka size chhota karenge */
   }
@@ -159,25 +243,189 @@ html {
   }
 
   .hero-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    /* gap: 15rem; */
-    background-color: #fbfbfb;
-    width: 100vw;
-    padding: 0 4rem;
+    width: 90%;
+    padding: 0;
   }
 
   .tagline {
-    /* background-color: aqua; */
-    font-size: 2.7rem;
-    width: 37%;
-    font-family: cursive;
+    text-align: center;
+    font-size: 43px;
+    font-weight: bolder;
   }
 
-  .content {
-    /* background-color: brown; */
-    width: 63%;
+  .super-hero {
+    overflow: hidden;
+    height: 300px !important;
+  }
+}
+
+@media (max-width: 850px) {
+  .super-hero {
+    overflow: hidden;
+    height: 360px !important;
+  }
+
+  .tagline {
+    font-size: 39px;
+  }
+
+  .hero2_content {
+    /* font-size: 20px; */
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 730px) {
+  .super-hero {
+    overflow: hidden;
+    height: 350px !important;
+  }
+
+  .tagline {
+    font-size: 40px;
+  }
+
+  .hero2_content {
+    /* font-size: 19px; */
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 660px) {
+
+  .super-hero {
+    overflow: hidden;
+    height: 390px !important;
+  }
+
+  .tagline {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 620px) {
+  .super-hero {
+    overflow: hidden;
+    height: 430px !important;
+  }
+
+  .tagline {
+    margin-top: 15px;
+    font-size: 37px;
+  }
+
+  .hero2_content {
+    /* font-size: 17px; */
+    /* margin-left: 1px; */
+    margin-top: 40px;
+    padding-left: 0;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 580px) {
+  .super-hero {
+    overflow: hidden;
+    height: 450px !important;
+  }
+
+  .tagline {
+    font-size: 40px;
+  }
+
+}
+
+@media (max-width: 540px) {
+
+  .super-hero {
+    overflow: hidden;
+    height: 490px !important;
+  }
+
+  .tagline {
+    font-size: 39px;
+  }
+}
+
+@media (max-width: 500px) {
+  super-hero {
+    overflow: hidden;
+    /* height: 100px !important; */
+  }
+
+  .tagline {
+    font-size: 36px;
+  }
+
+  .hero2_content{
+    display: none;
+  }
+
+  .hero3_content{
+    display: block;
+    font-size: 17px;
+    margin-top: 25px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .super-hero {
+    overflow: hidden;
+    height: 490px !important;
+    /* background-color: aqua; */
+  }
+
+  .tagline {
+    font-size: 35px;
+  }
+
+}
+
+@media (max-width: 385px) {
+  .super-hero {
+    overflow: hidden;
+    height: 550px !important;
+  }
+
+  .hero-content {
+    /* background-color: #2F2BF6; */
+    height: 1000px;
+  }
+
+  .tagline {
+    font-size: 32px;
+  }
+
+  .type-text {
+    font-size: 14px;
+    /* padding: 0 12px; */
+  }
+
+  .hero_content {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 340px) {
+  .super-hero {
+    /* height: 700px; */
+    /* background-color: #6c6799; */
+    overflow: hidden;
+    height: 550px !important;
+  }
+
+  .tagline {
+    /* padding: 0 0 !important; */
+    font-size: 29px;
+  }
+
+  .hero_content {
+    margin-top: 120px !important;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: bold;
   }
 }
 
@@ -204,23 +452,7 @@ html {
   }
 }
 
-@media (max-width: 768px) {
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    /* background-color: brown; */
-    padding: 0 2rem 1.4rem;
-    /* font-weight: normal; */
-  }
-
-  .tagline {
-    width: 100%;
-  }
-
-  .content {
-    width: 100%;
-  }
-}
+@media (max-width: 768px) {}
 
 /* Hamburger styles */
 .hamburger {
@@ -806,36 +1038,36 @@ html {
   }
 }
 
-@media(max-width:550px){
-  .Simplify_security{
-      font-size: 25px;
+@media(max-width:550px) {
+  .Simplify_security {
+    font-size: 25px;
   }
 }
 
-@media(max-width:470px){
-  .Simplify_security{
-      font-size: 23px;
+@media(max-width:470px) {
+  .Simplify_security {
+    font-size: 23px;
   }
 }
 
-@media(max-width:440px){
-  .Simplify_security{
-      font-size: 20px;
+@media(max-width:440px) {
+  .Simplify_security {
+    font-size: 20px;
   }
 }
 
-@media(max-width:376px){
-  .Simplify_security{
-      font-size: 18px;
-      font-weight: 700;
+@media(max-width:376px) {
+  .Simplify_security {
+    font-size: 18px;
+    font-weight: 700;
   }
 }
 
-@media(max-width:339px){
-  .Simplify_security{
-      font-size: 16px;
-      font-weight: 800;
-      line-height: 2;
+@media(max-width:339px) {
+  .Simplify_security {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 2;
   }
 }
 

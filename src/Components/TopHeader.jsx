@@ -37,7 +37,7 @@ function TopHeader() {
             <div className="topHead mb-2">
                 {isFixed && <div style={{ height: '4.4rem' }}></div>}
                 <div id="affixElement" className={`flex w-[100vw] justify-between bg-[#fff] h-[4.4rem] items-center ${isFixed ? 'fixed top-0 z-50' : ''}`}>
-                    <div className="h-16 flex items-center pl-[1.99rem]">
+                    <div className="h-16 flex items-center pl-[1.99rem] top-logo">
                         <img className="h-16" src="Hero_Images/samip-logo2.png" alt="Logo" />
                     </div>
                     {/* Desktop view */}

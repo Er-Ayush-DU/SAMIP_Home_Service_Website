@@ -1,78 +1,44 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 function Hero() {
-    const [activeImage, setActiveImage] = useState(0);
-    const [typedText, setTypedText] = useState(""); // Typing text
-    const [wordIndex, setWordIndex] = useState(0); // Track the current word
-    const [letterIndex, setLetterIndex] = useState(0); // Track the current letter
-    const [isDeleting, setIsDeleting] = useState(false); // To track if we are deleting text
-
-    const words = ["Vendor Management", "Garbage Management", "Vehicle Management", "Complaint System"]; // Words array
-
-    // Image change logic
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setActiveImage((prevImage) => (prevImage === 0 ? 1 : 0));
-        }, 3000);
-
-        return () => clearInterval(interval);
-    }, []);
-
-    // Typing and deleting effect logic
-    useEffect(() => {
-        let timeout;
-        if (!isDeleting && letterIndex < words[wordIndex].length) {
-            // Typing forward
-            timeout = setTimeout(() => {
-                setTypedText((prev) => prev + words[wordIndex][letterIndex]);
-                setLetterIndex(letterIndex + 1);
-            }, 150); // Typing speed
-        } else if (isDeleting && letterIndex > 0) {
-            // Deleting backward
-            timeout = setTimeout(() => {
-                setTypedText((prev) => prev.slice(0, -1)); // Remove last letter
-                setLetterIndex(letterIndex - 1);
-            }, 100); // Deleting speed
-        } else if (!isDeleting && letterIndex === words[wordIndex].length) {
-            // Pause before starting deletion
-            timeout = setTimeout(() => {
-                setIsDeleting(true); // Start deleting after a pause
-            }, 2000); // 2 second pause after typing the full word
-        } else if (isDeleting && letterIndex === 0) {
-            // When fully deleted, move to next word
-            setIsDeleting(false); // Switch to typing mode
-            setWordIndex((prevIndex) => (prevIndex + 1) % words.length); // Move to next word
-        }
-
-        return () => clearTimeout(timeout);
-    }, [letterIndex, isDeleting, wordIndex]);
+    
 
     return (
-        <div className="h-[500px] w-screen flex justify-around space-x-6">
-            <div className="w-[45%] pl-16 mt-10 hero-content">
-                <div className="text-[#7F24C6] text-[50px] font-[700] tagline">
-                    Connecting Helpers, Protecting Homes
+        <div className="h-[550px] w-screen flex justify-around space-x-6 super-hero overflow-hidden">
+            <div className="text-[#7F24C6] text-[50px] font-[700] tagline absolute top-24">
+                Connecting Helpers, Protecting Homes
+            </div>
+            
+            <div className="w-[45%] pl-16 mt-10 hero-content relative top-24">
+
+                <div className="text-xl  font-[600] text-justify hero_content">
+                    SAMIP: The Integrated Solution
+                    At the heart of LUP's operations is SAMIP (Society All-in-one Management Integrated Platform), an innovative software platform designed to streamline various services and manage community issues effectively. SAMIP caters to two main user groups: residents and workers, offering a comprehensive suite of features including:
+                    Attendance Management
+                    Garbage Collection Management
+                    Vehicle Management
+                    Vendor Management
+                    Complaint Management System
+                    SOS Alerts for emergencies
+                    QR-based systems for attendance tracking
+                    The platform enables residents to monitor services via smartphone apps, ensuring transparency and ease of access to information.
                 </div>
-                <div className="bg-emerald-200 mt-10 h-14 overflow-hidden">
-                    <div className="text-3xl text-[#2F2BF6] font-bold h-auto">SAMIP FEATURES : <span className="text-black bg-red-300 overflow-hidden">{typedText}</span></div>{/* Display typing text */}
+
+                <div className="text-xl mt-2 font-[600] text-justify hero2_content hidden">
+                    SAMIP (Society All-in-one Management Integrated Platform) is LUP's software solution for efficiently managing community services. It serves both residents and workers with features like attendance tracking, garbage and vehicle management, vendor oversight, and a complaint management system. It also includes SOS emergency alerts and QR-based systems for attendance. Residents can easily monitor services through smartphone apps, ensuring transparency and convenience.
                 </div>
-                <div className="text-xl font-[600] text-justify content">
-                    SAMIP is an integrated platform by LUP for managing community services, offering features like attendance, vehicle, garbage, and vendor management. It also includes a complaint system and emergency SOS alerts. Residents can monitor these services through a smartphone app for transparency and convenience.
+
+                <div className="text-xl mt-2 font-[600] text-justify hero3_content hidden">
+                    SAMIP (Society All-in-one Management Integrated Platform) is LUP's software solution for managing community services efficiently. It offers features like attendance tracking, garbage and vehicle management, vendor oversight, and a complaint management system, along with SOS alerts and QR-based attendance systems. Residents can conveniently monitor services through smartphone apps, ensuring transparency.
                 </div>
             </div>
 
-            <div className="w-[55%] heroImg relative">
-                <img
-                    src="Hero_Images/workers.png"
-                    alt="Hero Image"
-                    className={`object-fill h-cover w-full absolute top-0 left-0 transition-opacity duration-1000 ${activeImage === 0 ? "opacity-100" : "opacity-0"
-                        }`}
-                />
+            <div className="w-[55%] heroImg relative mt-20">
+
                 <img
                     src="Hero_Images/society.png"
                     alt="Society Image"
-                    className={`object-cover h-full w-full absolute top-0 left-0 transition-opacity duration-1000 ${activeImage === 1 ? "opacity-100" : "opacity-0"
-                        }`}
+                    className={`object-contain h-full w-full`}
                 />
             </div>
         </div>

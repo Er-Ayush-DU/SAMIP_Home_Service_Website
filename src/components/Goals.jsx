@@ -11,7 +11,7 @@ const Goals = () => {
 
         </div>
 
-        <div className="flex justify-around px-14 mt-7">
+        <div className="flex justify-around px-7 mt-7">
           <div className="container">
             <div className="box1 relative">
               <img src="images/goals.jpg" alt="" className="absolute top-0 left-0 object-cover object-center w-full h-full goals-img" />
