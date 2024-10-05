@@ -7,7 +7,7 @@ function Feature_Module() {
   
           <center><div><h1>Features</h1></div></center>
   
-          <div className="Feature" id="Feature1">
+          <div className="Feature_" id="Feature1">
             <div className="Image_">
               <img src="feature/Account-Management.png" alt="" />
             </div>
@@ -19,7 +19,7 @@ function Feature_Module() {
           </div >
   
   
-          <div className="Feature" id="Feature2">
+          <div className="Feature_" id="Feature2">
   
             <div className="content_">
               <h1>Admin Console</h1>
@@ -33,7 +33,7 @@ function Feature_Module() {
           </div >
   
   
-          <div className="Feature" id="Feature3">
+          <div className="Feature_" id="Feature3">
             <div className="Image_">
               <img src="feature/Profile-management.png" alt="" />
             </div>
@@ -46,7 +46,7 @@ function Feature_Module() {
             </div>
           </div >
   
-          <div className="Feature" id="Feature4">
+          <div className="Feature_" id="Feature4">
   
             <div className="content_">
               <h1>Surveys & Events Management</h1>
@@ -60,7 +60,7 @@ function Feature_Module() {
           </div >
   
   
-          <div className="Feature" id="Feature5">
+          <div className="Feature_" id="Feature5">
             <div className="Image_">
               <img src="feature/Reporting.png" alt="" />
             </div>
@@ -72,7 +72,7 @@ function Feature_Module() {
           </div >
   
   
-          <div className="Feature" id="Feature6">
+          <div className="Feature_" id="Feature6">
   
             <div className="content_">
               <h1>Vendor Management</h1>
@@ -90,7 +90,7 @@ function Feature_Module() {
   
           {/* Another 9 Content */}
   
-          {/* <div className="Feature" id="Feature7">
+          {/* <div className="Feature_" id="Feature7">
             <div className="Image">
               <img src="src/assets/Account Management.png" alt="" />
             </div>
