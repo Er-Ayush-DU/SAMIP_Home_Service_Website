@@ -54,7 +54,7 @@ function Hero() {
                     Connecting Helpers, Protecting Homes
                 </div>
                 <div className="bg-emerald-200 mt-10 h-14 overflow-hidden">
-                    <div className="text-3xl text-[#2F2BF6] font-bold h-auto">SAMIP FEATURES : <span className="text-black bg-red-300">{typedText}</span></div>{/* Display typing text */}
+                    <div className="text-3xl text-[#2F2BF6] font-bold h-auto">SAMIP FEATURES : <span className="text-black bg-red-300 overflow-hidden">{typedText}</span></div>{/* Display typing text */}
                 </div>
                 <div className="text-xl font-[600] text-justify content">
                     SAMIP is an integrated platform by LUP for managing community services, offering features like attendance, vehicle, garbage, and vendor management. It also includes a complaint system and emergency SOS alerts. Residents can monitor these services through a smartphone app for transparency and convenience.
