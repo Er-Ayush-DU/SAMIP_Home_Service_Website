@@ -5,6 +5,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
 import AboutPage from "./components/AboutPage";
+import LUP from "./Components/LUP";
+import MANACLE from "./Components/MANACLE";
 import Goals from "./components/Goals";
 import Total from "./components/Total";
 import Feature from "./components/Feature";
@@ -13,6 +15,7 @@ import FAQ from "./components/FAQ";
 import Preloader from "./components/Preloader"; // Import Preloader component
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Import React Router components
 import { Element } from "react-scroll"; // Import for smooth scrolling
+import Feature_Module from "./Components/Feature_Module";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -68,7 +71,12 @@ function App() {
                 }
               />
               <Route path="/about" element={<AboutPage />} />
+              <Route path="/lup" element={<LUP/>} />
+              <Route path="/manacle" element={<MANACLE/>} />
+              <Route path="/feature" element={<Feature_Module/>} />
+              
             </Routes>
+            
           </main>
 
           <footer>
