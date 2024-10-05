@@ -8,7 +8,7 @@ const AboutPage = () => {
 
         {/* Watermark Background Image */}
         <div
-          className="absolute inset-0 bg-[url('images/samip-logo2.png')] bg-cover bg-center opacity-15 z-0"
+          className="absolute inset-0 bg-[url('Hero_Images/samip-logo2.png')] bg-cover bg-center opacity-15 z-0"
           style={{ backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}
         ></div>
 

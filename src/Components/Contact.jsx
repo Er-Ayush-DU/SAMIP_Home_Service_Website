@@ -4,7 +4,7 @@ function Contact(){
     return<React.Fragment>
         <div className="mt-[2rem] h-auto flex justify-center items-center overflow-hidden ">
             <div className="w-[50vw] quries_img">
-                <img className="object-cover w-[50vw] h-[30rem] quries_img " src="src/assets/Images/contact_.avif" alt="" />
+                <img className="object-cover w-[50vw] h-[30rem] quries_img " src="Hero_Images/contact_.avif" alt="" />
             </div>
             <div className="flex justify-center items-center w-[50vw] overflow-hidden bg-gray-100 quries_form">
             <div className="bg-white shadow-lg rounded-lg p-8 w-full ">

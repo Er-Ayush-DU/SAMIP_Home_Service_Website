@@ -386,41 +386,32 @@ html {
 
 }
 
-@media(max-width:1005px) {
-  .about_samip {
-    font-size: 1.8rem;
+@media (max-width:450px) {
+  .about-button{
+    overflow: hidden;
+    /* height: 30px; */
   }
 
-  .about_samip_contant {
-    font-size: 14px;
-    font-weight: 500;
-  }
-}
-
-@media(max-width:765px) {
-  .about_us_container {
-    padding-left: 57px;
-    padding-right: 57px;
+  .about-paragraph{
+    font-size: 0.974rem;
   }
 }
 
-@media(max-width:539px) {
-  .about_us_container {
-    padding: 0 53px 0 53px;
+@media (max-width:411px){
+  .samip-full-form{
+    font-size: 1.1rem;
   }
 }
 
-@media(max-width:400px) {
-  .about_us_container {
-    padding: 0 48px 0 48px;
+@media (max-width:360px) {
+  .samip-full-form {
+    font-size: 0.87rem;
   }
 
-  .about_samip {
-    font-size: 1.6rem;
-
+  .about-paragraph{
+    font-size: 0.8rem;
   }
 }
-
 
 @media(max-width:1071px) {
   .total_bg .total_for {

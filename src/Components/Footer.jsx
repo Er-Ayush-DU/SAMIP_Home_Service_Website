@@ -15,7 +15,7 @@ function Footer() {
                 <div className="h-[250px] overflow-hidden flex justify-between">
                     {/* Logo Section */}
                     <div className="FooterLogo h-[11rem] ">
-                        <img className="h-[11rem]" src="src/assets/Images/samip-logo2.png" alt="Logo" />
+                        <img className="h-[11rem]" src="Hero_Images/samip-logo2.png" alt="Logo" />
                     </div>
 
                     {/* Contact Section */}

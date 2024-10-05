@@ -4,7 +4,7 @@ const Goals = () => {
   return (
     <>
       <div className="w-screen mb-10">
-        <div className="text-style mt-20 text-center h-[80px] text-3xl font-bold text-[#7F24C6]">
+        <div className="text-style mt-10 text-center h-[80px] text-3xl font-bold text-[#7F24C6]">
           <div>Simplify Your Society Life with Trusted</div>
           <div>Security and Reliable Services</div>
         </div>
