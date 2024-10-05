@@ -839,7 +839,37 @@ html {
   }
 }
 
+.Featues_mobiles {
+  background: #eff4f8;
+}
 
+
+.Feature {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+
+}
+
+.content {
+  height: auto;
+  width: 50vw;
+  position: relative;
+  top: 80px;
+  margin: 0 30px;
+  text-align: justify;
+
+}
+
+
+.content h1 {
+  color: #9DC3FC;
+  margin-bottom: 20px;
+}
+
+.Image img {
+  height: 500px;
+}
 
 ::-webkit-scrollbar {
   width: 7px;
