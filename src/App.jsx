@@ -15,7 +15,7 @@ import FAQ from "./components/FAQ";
 import Preloader from "./components/Preloader"; // Import Preloader component
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Import React Router components
 import { Element } from "react-scroll"; // Import for smooth scrolling
-import Feature_Module from "./Components/Feature_Module";
+import Feature_Module from "./components/Feature_Module";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -71,12 +71,14 @@ function App() {
                 }
               />
               <Route path="/about" element={<AboutPage />} />
-              <Route path="/lup" element={<LUP/>} />
-              <Route path="/manacle" element={<MANACLE/>} />
-              <Route path="/feature" element={<Feature_Module/>} />
-              
+              <Route path="/lup" element={<LUP />} />
+              <Route path="/manacle" element={<MANACLE />} />
+              <Route path="/feature" element={<Feature_Module />} />
+
+
+
             </Routes>
-            
+
           </main>
 
           <footer>
