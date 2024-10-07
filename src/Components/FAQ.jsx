@@ -80,9 +80,7 @@ const FAQ = () => {
             transition: transform 0.3s ease-in-out;
           }
 
-          .faq-icon-open {
-            transform: rotate(45deg);
-          }
+          
           `}
         </style>
         {faqs.map((faq, index) => (
