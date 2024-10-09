@@ -56,7 +56,7 @@ function Feature_Module() {
 
 
           <div className="Image_">
-            <img src="feature/Survet.png" alt="" />
+            <img src="feature/Survey.png" alt="" />
           </div>
         </div >
 
