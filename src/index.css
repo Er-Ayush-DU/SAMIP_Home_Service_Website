@@ -357,11 +357,11 @@ html {
     font-size: 36px;
   }
 
-  .hero2_content{
+  .hero2_content {
     display: none;
   }
 
-  .hero3_content{
+  .hero3_content {
     display: block;
     font-size: 17px;
     margin-top: 25px;
@@ -1072,15 +1072,23 @@ html {
 }
 
 
+/* FeaturePage */
+
 .Featues_mobiles {
   background: #eff4f8;
 }
 
+.Featues_mobiles center {
+  font-size: xx-large;
+  font-weight: 700;
+  color: #7f24c6
+}
 
 .Feature_ {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  margin-bottom: 5rem;
 
 }
 
@@ -1117,4 +1125,70 @@ html {
   background: linear-gradient(#8d89a3, #6c6799);
   border-radius: 20px;
   height: 20px;
+}
+
+
+/* Media Query for FeaturePage */
+
+@media (min-width:600px) and (max-width:900px) {
+  .Image_ img {
+    height: 350px;
+  }
+
+  .content_ {
+    height: auto;
+    width: 50vw;
+    position: relative;
+    top: 0;
+    margin: 0 30px;
+    text-align: justify;
+
+  }
+
+  .Feature_ {
+    margin-top: 5rem;
+
+  }
+
+}
+
+
+
+@media (max-width:600px) {
+
+  .Image_ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+    /* Image pehle rahegi */
+  }
+
+  .Image_ img {
+    height: 300px;
+    margin-top: 3rem;
+
+
+  }
+
+  .content_ {
+    height: auto;
+    width: 90vw;
+    position: relative;
+    top: 0;
+    margin: 0 20px;
+    text-align: justify;
+    font-size: 14px;
+    order: 2;
+    /* Content dusre number pe rahega */
+
+  }
+
+  .Feature_ {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+
 }
