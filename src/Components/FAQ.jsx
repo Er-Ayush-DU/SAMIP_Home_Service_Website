@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { CiCirclePlus } from "react-icons/ci";
+import { CiCircleMinus } from "react-icons/ci";
 
 const FAQ = () => {
   const [faqs, setFaqs] = useState([
@@ -88,7 +90,8 @@ const FAQ = () => {
             <div className="faq-question" onClick={() => handleToggle(index)}>
               <span>{faq.question}</span>
               <span className={`faq-icon ${activeIndex === index ? 'faq-icon-open' : ''}`}>
-                {activeIndex === index ? '-' : '+'}
+                {activeIndex === index ? <CiCircleMinus className='font-bold'/>
+                  : <CiCirclePlus className='font-bold' />}
               </span>
             </div>
             {activeIndex === index && (
