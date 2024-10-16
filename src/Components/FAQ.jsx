@@ -90,8 +90,8 @@ const FAQ = () => {
             <div className="faq-question" onClick={() => handleToggle(index)}>
               <span>{faq.question}</span>
               <span className={`faq-icon ${activeIndex === index ? 'faq-icon-open' : ''}`}>
-                {activeIndex === index ? <CiCircleMinus className='font-bold'/>
-                  : <CiCirclePlus className='font-bold' />}
+                {activeIndex === index ? <CiCircleMinus className='font-[900] text-[22px]' />
+                  : <CiCirclePlus className='font-[900] text-[22px]' />}
               </span>
             </div>
             {activeIndex === index && (
