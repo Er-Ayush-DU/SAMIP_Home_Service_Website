@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 
 const data = [
   {
@@ -14,11 +13,11 @@ const data = [
           SAMIP is a comprehensive software platform designed to streamline society
           management through a unified interface.
         </p>
-        <Link to="/about" className="about-button">
+        <a href="/about" className="about-button">
           <button className="h-8 w-28 bg-[#2F2BF6] flex justify-center items-center rounded-md about_button">
             Read More
           </button>
-        </Link>
+        </a>
         <div className="w-[388px] h-[11.94px] bg-gray-500 rounded-sm"></div>
       </>
     ),
@@ -39,11 +38,11 @@ const data = [
 
 
         </p>
-        <Link to="/lup" className="about-button">
+        <a href="/lup" className="about-button">
           <button className="h-8 w-28 bg-[#2F2BF6] flex justify-center items-center rounded-md about_button">
             Read More
           </button>
-        </Link>
+        </a>
         <div className="w-[388px] h-[11.94px] bg-gray-500 rounded-sm"></div>
       </>
     ),
@@ -61,11 +60,11 @@ const data = [
           Manacle Technologies Pvt. Ltd is a software service
           provider company, established in 2012, CMMI Level 3 certified.
         </p>
-        <Link to="/manacle" className="about-button">
+        <a href="/manacle" className="about-button">
           <button className="h-8 w-28 bg-[#2F2BF6] flex justify-center items-center rounded-md about_button">
             Read More
           </button>
-        </Link>
+        </a>
         <div className="w-[388px] h-[11.94px] bg-gray-500 rounded-sm"></div>
       </>
     ),
@@ -74,7 +73,7 @@ const data = [
 
 function AboutUs() {
   return (
-    <div className="w-screen h-auto bg-[#f2f2f2] mt-10 pb-10">
+    <div className="w-screen h-auto bg-[#f2f2f2] mt-10 pb-10 ">
       <h1 className="text-center mt-5 text-4xl font-semibold text-orange-500 overflow-hidden">
         WHO ARE WE
       </h1>

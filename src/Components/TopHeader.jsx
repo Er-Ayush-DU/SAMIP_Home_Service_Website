@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import Hamburger from './Hamburger'; // Hamburger component ko import karo
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,6 +8,7 @@ import { faUserPlus } from '@fortawesome/free-solid-svg-icons';
 function TopHeader() {
     const [isFixed, setIsFixed] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false); // Menu open/close state
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -32,23 +33,50 @@ function TopHeader() {
         document.querySelector('.mobile-menu').classList.toggle('show');
     };
 
+
+
     return (
         <React.Fragment>
             <div className="topHead mb-2">
                 {isFixed && <div style={{ height: '4.4rem' }}></div>}
                 <div id="affixElement" className={`flex w-[100vw] justify-between bg-[#fff] h-[4.4rem] items-center ${isFixed ? 'fixed top-0 z-50' : ''}`}>
-                    <div className="h-16 flex items-center pl-[1.99rem] top-logo">
+                    <a href="/" className="h-16 flex items-center pl-[1.99rem] top-logo cursor-pointer">
                         <img className="h-16" src="Hero_Images/samip-logo2.png" alt="Logo" />
-                    </div>
+                    </a>
                     {/* Desktop view */}
                     <div className="hidden md:flex justify-between items-center gap-20">
                         <div className="flex align-center gap-11 navItems z-[99]">
                             {/* Navigation Links */}
-                            <Link to="/" className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full cursor-pointer">HOME</Link>
-                            <ScrollLink to="aboutSection" smooth={true} duration={500} className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full cursor-pointer">ABOUT US</ScrollLink>
-                            <ScrollLink to="featureSection" smooth={true} duration={500} className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full cursor-pointer">FEATURES</ScrollLink>
-                            <ScrollLink to="testimonialsSection" smooth={true} duration={500} className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full cursor-pointer">TESTIMONIALS</ScrollLink>
-                            <ScrollLink to="contactSection" smooth={true} duration={500} className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full cursor-pointer">CONTACT US</ScrollLink>
+                            {location.pathname === '/' ? (
+                                <ScrollLink to="heroSection" smooth={true} duration={800} offset={-80} className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full cursor-pointer">HOME</ScrollLink>
+                            ) : (
+                                <Link to="/" onClick={() => setIsMenuOpen(false)} className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full">HOME</Link>
+                            )}
+
+                            {location.pathname === '/' ? (
+                                <ScrollLink to="aboutSection" smooth={true} duration={800} offset={-80} className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full cursor-pointer">ABOUT US</ScrollLink>
+                            ) : (
+                                <Link to="/" onClick={() => setIsMenuOpen(false)} className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full">ABOUT US</Link>
+                            )}
+
+                            {location.pathname === '/' ? (
+                                <ScrollLink to="featureSection" smooth={true} duration={800} offset={-80} className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full cursor-pointer">FEATURES</ScrollLink>
+                            ) : (
+                                <Link to="/" onClick={() => setIsMenuOpen(false)} className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full">FEATURES</Link>
+                            )}
+
+                            {location.pathname === '/' ? (
+                                <ScrollLink to="testimonialsSection" smooth={true} duration={800} offset={-80} className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full cursor-pointer">TESTIMONIALS</ScrollLink>
+                            ) : (
+                                <Link to="/" onClick={() => setIsMenuOpen(false)} className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full">TESTIMONIALS</Link>
+                            )}
+
+                            {location.pathname === '/' ? (
+                                <ScrollLink to="contactSection" smooth={true} duration={800} offset={-80} className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full cursor-pointer">CONTACT US</ScrollLink>
+                            ) : (
+                                <Link to="/" onClick={() => setIsMenuOpen(false)} className="navItem relative inline-block text-black after:absolute after:bg-[#2F2BF6] after:h-[2px] after:w-0 after:left-0 after:bottom-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-full">CONTACT US</Link>
+                            )}
+
                         </div>
                         <div className="pr-12">
                             <div className="bg-[#2F2BF6] p-[0.3rem] pl-[0.9rem] pr-[0.9rem] rounded-2xl sign_up_button">

@@ -44,7 +44,7 @@ function Feature() {
 
         <div className='flex flex-wrap justify-center '>
           {content.map((item, index) => (
-            <div className='details overflow-hidden cursor-pointer feature_item'
+            <div className='details overflow-hidden  feature_item'
               key={index}
               onMouseEnter={() => setHoverIndex(index)}
               onMouseLeave={() => setHoverIndex(null)}
@@ -75,26 +75,26 @@ function Feature() {
             </div>
           ))}
         </div>
-          <Link to="/feature">
-            
-        <button
-          className="feature-btn border-black rounded-[15px] w-[120px] h-[35px] ml-[150px] mt-[10px] bg-[#2F2BF6] text-[white] border-0 button_view_more"
-          style={{
-            transition: 'background-color 0.3s',
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = 'white',
-              e.currentTarget.style.color = 'blue';
-            e.currentTarget.style.border = '1px solid blue';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = '#2F2BF6';
-            e.currentTarget.style.color = 'white';
-          }}
-        >
-          View More
-        </button>
-          </Link>
+        <a href="/feature">
+
+          <button
+            className="feature-btn border-black rounded-[15px] w-[120px] h-[35px] ml-[150px] mt-[10px] bg-[#2F2BF6] text-[white] border-0 button_view_more"
+            style={{
+              transition: 'background-color 0.3s',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = 'white',
+                e.currentTarget.style.color = 'blue';
+              e.currentTarget.style.border = '1px solid blue';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = '#2F2BF6';
+              e.currentTarget.style.color = 'white';
+            }}
+          >
+            View More
+          </button>
+        </a>
       </div>
     </>
   );

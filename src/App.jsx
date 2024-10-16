@@ -45,7 +45,10 @@ function App() {
                 path="/"
                 element={
                   <>
-                    <Hero />
+                    <Element name='heroSection'>
+
+                      <Hero />
+                    </Element>
                     <Element name='aboutSection'>
                       <AboutUs></AboutUs>
                     </Element>
@@ -62,9 +65,7 @@ function App() {
                       <Testimonial />
                     </Element>
 
-                    <Element name="contactSection">
-                      <Contact />
-                    </Element>
+
 
                     <FAQ />
                   </>
@@ -82,7 +83,9 @@ function App() {
           </main>
 
           <footer>
-            <Footer />
+            <Element name="contactSection">
+              <Footer />
+            </Element>
           </footer>
         </Router>
       )}
