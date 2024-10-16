@@ -10,7 +10,7 @@ const cardsData = [
   { id: 4, title: 'Dr. Rishi M Bhatnagar', profile: 'Entrepreneur & Technology expert', contribution: 'SEO Content', mobile: '321-654-9870', photo: 'images/Rishi.jpg', description: 'Proficient content writer with years of experience in SEO writing, blog content, and copywriting. Passionate about crafting engaging stories.' },
   { id: 5, title: 'Prashant Kumar', profile: 'Full Stack Developer', contribution: 'Front-End Development', mobile: '(91+ 9005975579)', photo: 'images/pk.jpg', description: 'Digital marketer with experience in SEO, SEM, and social media management. Focused on increasing brand visibility and engagement.' },
   { id: 6, title: 'Ayush Tiwari', profile: 'UX/UI and Development', contribution: 'UI and Development', mobile: '654-321-0987', photo: 'images/ayush.jpg', description: 'Digital marketer with experience in SEO, SEM, and social media management. Focused on increasing brand visibility and engagement.' },
-  { id: 7, title: 'Krishna', profile: 'Full Stack Developer', contribution: 'Front-End Development', mobile: '654-321-0987', photo: 'images/ayush.jpg', description: 'Digital marketer with experience in SEO, SEM, and social media management. Focused on increasing brand visibility and engagement.' },
+  { id: 7, title: 'Krishna', profile: 'Full Stack Developer', contribution: 'Front-End Development', mobile: '654-321-0987', photo: 'images/krishna1.jpg', description: 'Full Stack Developer with experience in APC(Antha Prerna Cell) and worked on ERP project.' },
 ];
 
 
