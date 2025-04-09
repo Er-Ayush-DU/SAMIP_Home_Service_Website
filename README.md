@@ -24,8 +24,7 @@ Built with **React + Vite**, SAMIP ensures fast performance, modular structure, 
 - ⚛️ React (with Hooks & Context)
 - ⚡ Vite (fast bundling & dev server)
 - 🖌️ Material UI (MUI) for UI components
-- 🗃️ Firebase / Backend API (optional, if implemented)
-- 🌗 Dark Mode Support (if added)
+- 
 
 ---
 
